@@ -27,7 +27,6 @@ __published:	// IDE 管理のコンポーネント
 	TShellComboBox *ShellComboBox;
 	TLabel *Label1;
 	TStatusBar *StatusBar;
-	TShellPopupMenu *ShellPopupMenu;
 	TMenuItem *SelectMenuItem;
 	TMenuItem *N2;
 	void __fastcall ShellTreeViewChange(TObject *Sender, TTreeNode *Node);

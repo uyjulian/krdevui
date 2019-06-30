@@ -183,13 +183,10 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
     Width = 390
     Height = 271
     Anchors = [akLeft, akTop, akRight, akBottom]
-    Checkboxes = False
     Indent = 19
     TabOrder = 0
     OnChange = ShellTreeViewChange
     ShellComboBox = ShellComboBox
-    ShellPopupMenu = ShellPopupMenu
-    ShVirtuaItems = [itNetWork]
   end
   object OKButton: TButton
     Left = 221
@@ -234,19 +231,5 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
         Width = 50
       end>
     SimplePanel = False
-  end
-  object ShellPopupMenu: TShellPopupMenu
-    AutoPopup = False
-    InsertPos = 2
-    Left = 192
-    Top = 96
-    object SelectMenuItem: TMenuItem
-      Caption = '‘I‘ð'
-      Default = True
-      OnClick = SelectMenuItemClick
-    end
-    object N2: TMenuItem
-      Caption = '-'
-    end
   end
 end

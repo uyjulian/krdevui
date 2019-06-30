@@ -142,17 +142,6 @@ void __fastcall TFolderSelectorForm::ShellListViewClick(TObject *Sender)
 }
 //---------------------------------------------------------------------------
 
-void __fastcall TFolderSelectorForm::ShellListViewShExecute(
-	  TObject *Sender, TShellFileItem *Item, TShiftState Shift,
-	  int SubItem, int X, int Y, bool &DefaultAction)
-{
-	if(FileExists(Item->Path))
-	{
-		// selected item is a file
-		DefaultAction =false;
-		OKButton->Click();
-	}
-}
 //---------------------------------------------------------------------------
 void __fastcall TFolderSelectorForm::SelectItemMenuItemClick(
 	  TObject *Sender)

@@ -1510,9 +1510,6 @@ object FolderSelectorForm: TFolderSelectorForm
       ViewStyle = vsList
       OnChange = ShellListViewChange
       OnClick = ShellListViewClick
-      ShellPopupMenu = ShellListPopupMenu
-      ShVirtuaItems = [itNetWork]
-      OnShExecute = ShellListViewShExecute
     end
     object ShellTreeView: TShellTreeView
       Left = 0
@@ -1520,15 +1517,12 @@ object FolderSelectorForm: TFolderSelectorForm
       Width = 244
       Height = 329
       Align = alLeft
-      Checkboxes = False
       Indent = 19
       TabOrder = 0
       OnChange = ShellTreeViewChange
       OnClick = ShellTreeViewClick
       ShellComboBox = ShellComboBox
       ShellListView = ShellListView
-      ShellPopupMenu = ShellTreePopupMenu
-      ShVirtuaItems = [itNetWork]
     end
     object ShellComboBox: TShellComboBox
       Left = 120
@@ -1601,32 +1595,5 @@ object FolderSelectorForm: TFolderSelectorForm
         Width = 50
       end>
     SimplePanel = False
-  end
-  object ShellListPopupMenu: TShellPopupMenu
-    AutoPopup = False
-    InsertPos = 2
-    Left = 288
-    Top = 192
-    object SelectItemMenuItem: TMenuItem
-      Caption = 'ãgó¢ãgó¢Ç≈é¿çs'
-      Default = True
-      OnClick = SelectItemMenuItemClick
-    end
-    object N2: TMenuItem
-      Caption = '-'
-    end
-  end
-  object ShellTreePopupMenu: TShellPopupMenu
-    AutoPopup = False
-    InsertPos = 2
-    Left = 184
-    Top = 192
-    object SelectFolderMenuItem: TMenuItem
-      Caption = 'ãgó¢ãgó¢Ç≈é¿çs'
-      OnClick = SelectItemMenuItemClick
-    end
-    object N3: TMenuItem
-      Caption = '-'
-    end
   end
 end

@@ -31,7 +31,6 @@ __published:	// IDE 管理のコンポーネント
 	TShellTreeView *ShellTreeView;
 	TButton *NoSelectButton;
 	TShellComboBox *ShellComboBox;
-	TShellPopupMenu *ShellListPopupMenu;
 	TLabel *Label2;
 	TLabel *FileLabel;
 	TLabel *FolderLabel;
@@ -40,7 +39,6 @@ __published:	// IDE 管理のコンポーネント
 	TStaticText *PlaceLabel;
 	TMenuItem *SelectItemMenuItem;
 	TMenuItem *N2;
-	TShellPopupMenu *ShellTreePopupMenu;
 	TStatusBar *StatusBar1;
 	TMenuItem *SelectFolderMenuItem;
 	TMenuItem *N3;
@@ -51,9 +49,6 @@ __published:	// IDE 管理のコンポーネント
           TItemChange Change);
 	void __fastcall ShellTreeViewClick(TObject *Sender);
 	void __fastcall ShellListViewClick(TObject *Sender);
-	void __fastcall ShellListViewShExecute(TObject *Sender,
-          TShellFileItem *Item, TShiftState Shift, int SubItem, int X,
-          int Y, bool &DefaultAction);
 	void __fastcall SelectItemMenuItemClick(TObject *Sender);
 private:	// ユーザー宣言
 public:		// ユーザー宣言
