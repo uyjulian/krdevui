@@ -9,9 +9,9 @@ object EditLabelAttribFrame: TEditLabelAttribFrame
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 45
+    Width = 60
     Height = 12
-    Caption = #12521#12505#12523#21517
+    Caption = 'Label Name'
   end
   object LabelNameEdit: TEdit
     Left = 64

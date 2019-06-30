@@ -1,9 +1,9 @@
 object ConfSettingsForm: TConfSettingsForm
-  Left = 56
-  Top = 447
+  Left = 414
+  Top = 243
   Width = 607
   Height = 406
-  Caption = #35373#23450
+  Caption = 'Configuration'
   Color = clBtnFace
   Constraints.MinHeight = 389
   Constraints.MinWidth = 607
@@ -22,33 +22,33 @@ object ConfSettingsForm: TConfSettingsForm
   object SpecifiedFileIsNotKrKrLabel: TLabel
     Left = 8
     Top = 328
-    Width = 324
+    Width = 229
     Height = 12
-    Caption = #25351#23450#12373#12428#12383#12501#12449#12452#12523#12399#21513#37324#21513#37324#23455#34892#21487#33021#12501#12449#12452#12523#12391#12399#12354#12426#12414#12379#12435
+    Caption = 'The specified file is not a KiriKiri executable'
     Visible = False
   end
   object IconChangeWarnLabel: TLabel
     Left = 8
     Top = 337
-    Width = 407
+    Width = 312
     Height = 12
     Anchors = [akLeft, akBottom]
-    Caption = #8251' '#19968#24230#12450#12452#12467#12531#12398#22793#26356#12434#34892#12358#12392#21029#12398#12450#12452#12467#12531#12395#22793#26356#12391#12365#12394#12367#12394#12427#21487#33021#24615#12364#12354#12426#12414#12377
+    Caption = '* Once the icon is saved, you can no longer change the icon.'
   end
   object FileWroteLabel: TLabel
     Left = 8
     Top = 336
-    Width = 98
+    Width = 78
     Height = 12
-    Caption = #35373#23450#12434#20445#23384#12375#12414#12375#12383
+    Caption = 'Settings saved.'
     Visible = False
   end
   object ProgramMayRunningLabel: TLabel
     Left = 8
     Top = 344
-    Width = 322
+    Width = 248
     Height = 12
-    Caption = #12501#12449#12452#12523#12434#38283#12369#12414#12379#12435'('#12503#12525#12464#12521#12512#12364#23455#34892#20013#12398#21487#33021#24615#12364#12354#12426#12414#12377')'
+    Caption = 'File cannot be opened (program may be running)'
     Visible = False
   end
   object OKButton: TButton
@@ -69,7 +69,7 @@ object ConfSettingsForm: TConfSettingsForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     ModalResult = 2
     TabOrder = 1
   end
@@ -120,9 +120,9 @@ object ConfSettingsForm: TConfSettingsForm
   end
   object OpenDialog: TOpenDialog
     DefaultExt = 'exe'
-    Filter = #23455#34892#21487#33021#12501#12449#12452#12523'(*.exe)|*.exe|'#12377#12409#12390#12398#12501#12449#12452#12523'(*.*)|*.*'
+    Filter = 'Executable file (*.exe)|*.exe|All files (*.*)|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofNoReadOnlyReturn, ofEnableSizing]
-    Title = #21513#37324#21513#37324' '#23455#34892#21487#33021#12501#12449#12452#12523#12398#36984#25246
+    Title = 'Select KiriKiri executable file'
     Left = 384
     Top = 328
   end

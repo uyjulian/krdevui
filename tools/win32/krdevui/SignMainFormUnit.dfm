@@ -1,9 +1,9 @@
 object SignMainForm: TSignMainForm
-  Left = 63
-  Top = 17
+  Left = 325
+  Top = 86
   ActiveControl = PageControl
   BorderStyle = bsDialog
-  Caption = #12461#12540#12539#32626#21517#12484#12540#12523
+  Caption = 'Key and signature tool'
   ClientHeight = 384
   ClientWidth = 369
   Color = clBtnFace
@@ -643,7 +643,7 @@ object SignMainForm: TSignMainForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #38281#12376#12427'(&C)'
+    Caption = '&Close'
     ModalResult = 1
     TabOrder = 0
     OnClick = CloseButtonClick
@@ -657,27 +657,29 @@ object SignMainForm: TSignMainForm
     TabIndex = 0
     TabOrder = 1
     object KeyGenTabSheet: TTabSheet
-      Caption = #12461#12540#29983#25104
+      Caption = 'Key generation'
       object Label1: TLabel
         Left = 8
         Top = 8
-        Width = 207
+        Width = 126
         Height = 12
-        Caption = #32626#21517#12434#34892#12358#12383#12417#12398#12461#12540'('#37749')'#12434#20316#25104#12375#12414#12377#12290
+        Caption = 'Create a key for signing.'
       end
       object Label2: TLabel
         Left = 8
         Top = 24
-        Width = 324
+        Width = 337
         Height = 12
-        Caption = #19979#12398#12300#29983#25104#12377#12427#12301#12508#12479#12531#12434#25276#12377#12392#31192#23494#37749#12392#20844#38283#37749#12364#29983#25104#12373#12428#12414#12377#12290
+        Caption = 
+          'Press the "Generate" button to generate a public/private keypair' +
+          '.'
       end
       object Label3: TLabel
         Left = 8
         Top = 40
-        Width = 289
+        Width = 221
         Height = 12
-        Caption = #12371#12428#12425#12399#12506#12450#12398#37749#12391#12377#12290#20001#26041#12392#12418#22823#20999#12395#20445#31649#12375#12390#12367#12384#12373#12356#12290
+        Caption = 'Please make sure that you keep both keys.'
       end
       object Label4: TLabel
         Left = 12
@@ -686,7 +688,7 @@ object SignMainForm: TSignMainForm
         Height = 17
         Alignment = taCenter
         AutoSize = False
-        Caption = #31192#23494#37749#12398#26041#12399#20844#38283#12375#12390#12399#12356#12369#12414#12379#12435
+        Caption = 'The private key should not be disclosed.'
         Color = clRed
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWhite
@@ -700,23 +702,23 @@ object SignMainForm: TSignMainForm
       object Label5: TLabel
         Left = 8
         Top = 56
-        Width = 179
+        Width = 217
         Height = 12
-        Caption = #20844#38283#37749#12399#24517#35201#12395#24540#12376#12390#20844#38283#12375#12414#12377#12290
+        Caption = 'The public key will be released as needed.'
       end
       object Label6: TLabel
         Left = 8
         Top = 173
-        Width = 98
+        Width = 110
         Height = 12
-        Caption = #29983#25104#12373#12428#12383#20844#38283#37749' :'
+        Caption = 'Generated public key:'
       end
       object Label7: TLabel
         Left = 8
         Top = 244
-        Width = 98
+        Width = 115
         Height = 12
-        Caption = #29983#25104#12373#12428#12383#31192#23494#37749' :'
+        Caption = 'Generated private key:'
       end
       object Label8: TLabel
         Left = 166
@@ -728,16 +730,16 @@ object SignMainForm: TSignMainForm
       object Label9: TLabel
         Left = 9
         Top = 296
-        Width = 327
+        Width = 302
         Height = 12
-        Caption = #8251' '#12454#12451#12531#12489#12454#12434#38281#12376#12427#12392#12365#12395#12463#12522#12483#12503#12508#12540#12489#12398#20869#23481#12399#12463#12522#12450#12373#12428#12414#12377
+        Caption = '* The clipboard will be cleared when the window is closed..'
       end
       object KeyGeneratingLabel: TLabel
         Left = 16
         Top = 128
-        Width = 308
+        Width = 242
         Height = 12
-        Caption = #12461#12540#12434#29983#25104#20013#12391#12377' .. '#12371#12428#12395#12399#12375#12400#12425#12367#26178#38291#12364#12363#12363#12426#12414#12377
+        Caption = 'Generating key... This may take a while.'
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
@@ -751,7 +753,7 @@ object SignMainForm: TSignMainForm
         Top = 96
         Width = 75
         Height = 25
-        Caption = #29983#25104#12377#12427'(&G)'
+        Caption = '&Generate'
         Default = True
         TabOrder = 0
         OnClick = GenerateButtonClick
@@ -761,8 +763,8 @@ object SignMainForm: TSignMainForm
         Top = 167
         Width = 75
         Height = 25
-        Hint = #12463#12522#12483#12503#12508#12540#12489#12395#20844#38283#37749#12434#12467#12500#12540#12375#12414#12377
-        Caption = #12467#12500#12540'(&B)'
+        Hint = 'Copy the public key to the clipboard'
+        Caption = 'Copy (&B)'
         Enabled = False
         ParentShowHint = False
         ShowHint = True
@@ -774,8 +776,8 @@ object SignMainForm: TSignMainForm
         Top = 238
         Width = 75
         Height = 25
-        Hint = #12463#12522#12483#12503#12508#12540#12489#12395#31192#23494#37749#12434#12467#12500#12540#12375#12414#12377
-        Caption = #12467#12500#12540'(&P)'
+        Hint = 'Copy the private key to the clipboard'
+        Caption = 'Copy (&P)'
         Enabled = False
         ParentShowHint = False
         ShowHint = True
@@ -783,18 +785,18 @@ object SignMainForm: TSignMainForm
         OnClick = CopyPrivateKeyButtonClick
       end
       object GeneratedPublicKeyEdit: TMemo
-        Left = 112
+        Left = 128
         Top = 144
-        Width = 145
+        Width = 129
         Height = 65
         ReadOnly = True
         ScrollBars = ssVertical
         TabOrder = 1
       end
       object GeneratedPrivateKeyEdit: TMemo
-        Left = 112
+        Left = 128
         Top = 216
-        Width = 145
+        Width = 129
         Height = 65
         ReadOnly = True
         ScrollBars = ssVertical
@@ -802,65 +804,65 @@ object SignMainForm: TSignMainForm
       end
     end
     object SignTabSheet: TTabSheet
-      Caption = #32626#21517
+      Caption = 'Signature'
       ImageIndex = 1
       object Label10: TLabel
         Left = 8
         Top = 8
-        Width = 210
+        Width = 283
         Height = 12
-        Caption = #32626#21517#12434#12375#12414#12377#12290#31192#23494#37749#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
+        Caption = 'Signing will be performed. Please specify a private key.'
       end
       object Label11: TLabel
         Left = 16
         Top = 61
-        Width = 57
+        Width = 58
         Height = 12
-        Caption = #31192#23494#37749'(&P) :'
+        Caption = '&Private key'
       end
       object Label12: TLabel
         Left = 8
         Top = 120
-        Width = 249
+        Width = 137
         Height = 12
-        Caption = #32626#21517#12434#34892#12358#23550#35937#12392#12394#12427#12501#12449#12452#12523#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
+        Caption = 'Specify a file to be signed.'
       end
       object Label13: TLabel
         Left = 8
         Top = 288
-        Width = 274
+        Width = 258
         Height = 12
-        Caption = #29694#12496#12540#12472#12519#12531#12391#12399#21513#37324#21513#37324#26412#20307#12395#12398#12415#32626#21517#21487#33021#12391#12377#12290
+        Caption = 'Currently, this tool only signs KiriKiri-related files.'
         Visible = False
       end
       object Label14: TLabel
         Left = 16
         Top = 148
-        Width = 86
+        Width = 55
         Height = 12
-        Caption = #23550#35937#12501#12449#12452#12523'(&T) :'
+        Caption = '&Target file:'
         FocusControl = SignFileNameEdit
       end
       object Label15: TLabel
         Left = 8
         Top = 200
-        Width = 232
+        Width = 224
         Height = 12
-        Caption = #12501#12449#12452#12523#12434#12371#12398#12454#12451#12531#12489#12454#12395#12489#12525#12483#12503#12377#12427#12371#12392#12391#12418
+        Caption = 'Files can also be dropped onto this window.'
       end
       object Label16: TLabel
         Left = 8
         Top = 216
-        Width = 207
+        Width = 163
         Height = 12
-        Caption = #23550#35937#12501#12449#12452#12523#12434#25351#23450#12377#12427#12371#12392#12364#20986#26469#12414#12377#12290
+        Caption = 'The target file can be specified.'
       end
       object SignDoneLabel: TLabel
         Left = 16
         Top = 264
-        Width = 96
+        Width = 85
         Height = 12
-        Caption = #32626#21517#12434#34892#12356#12414#12375#12383#12290
+        Caption = 'Finished signing.'
         Visible = False
       end
       object SignFileNameEdit: TEdit
@@ -876,7 +878,7 @@ object SignMainForm: TSignMainForm
         Top = 174
         Width = 67
         Height = 25
-        Caption = #21442#29031'(&R) ...'
+        Caption = 'B&rowse...'
         TabOrder = 1
         OnClick = SignFileNameRefButtonClick
       end
@@ -885,7 +887,7 @@ object SignMainForm: TSignMainForm
         Top = 256
         Width = 82
         Height = 25
-        Caption = #32626#21517#12377#12427'(&S)'
+        Caption = '&Sign'
         Default = True
         Enabled = False
         TabOrder = 2
@@ -901,81 +903,81 @@ object SignMainForm: TSignMainForm
       end
     end
     object CheckSignTabSheet: TTabSheet
-      Caption = #32626#21517#30906#35469
+      Caption = 'Verification'
       ImageIndex = 2
       object SignatureIsValidLabel: TLabel
         Left = 0
         Top = 264
-        Width = 124
+        Width = 91
         Height = 12
-        Caption = #32626#21517#12399#27491#24403#12394#12418#12398#12391#12377#12290
+        Caption = 'Signature is valid.'
         Visible = False
       end
       object Label18: TLabel
         Left = 8
         Top = 216
-        Width = 207
+        Width = 163
         Height = 12
-        Caption = #23550#35937#12501#12449#12452#12523#12434#25351#23450#12377#12427#12371#12392#12364#20986#26469#12414#12377#12290
+        Caption = 'The target file can be specified.'
       end
       object Label19: TLabel
         Left = 8
         Top = 200
-        Width = 232
+        Width = 224
         Height = 12
-        Caption = #12501#12449#12452#12523#12434#12371#12398#12454#12451#12531#12489#12454#12395#12489#12525#12483#12503#12377#12427#12371#12392#12391#12418
+        Caption = 'Files can also be dropped onto this window.'
       end
       object Label20: TLabel
         Left = 16
         Top = 148
-        Width = 86
+        Width = 55
         Height = 12
-        Caption = #23550#35937#12501#12449#12452#12523'(&T) :'
+        Caption = '&Target file:'
         FocusControl = CheckSignFileNameEdit
       end
       object Label21: TLabel
         Left = 8
         Top = 280
-        Width = 274
+        Width = 258
         Height = 12
-        Caption = #29694#12496#12540#12472#12519#12531#12391#12399#21513#37324#21513#37324#26412#20307#12395#12398#12415#32626#21517#21487#33021#12391#12377#12290
+        Caption = 'Currently, this tool only signs KiriKiri-related files.'
         Visible = False
       end
       object Label22: TLabel
         Left = 8
         Top = 120
-        Width = 290
+        Width = 142
         Height = 12
-        Caption = #32626#21517#12434#12481#12455#12483#12463#12377#12427#23550#35937#12392#12394#12427#12501#12449#12452#12523#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
+        Caption = 'Specify a file to be verified.'
       end
       object Label23: TLabel
         Left = 16
         Top = 61
-        Width = 57
+        Width = 60
         Height = 12
-        Caption = #20844#38283#37749'(&P) :'
+        Caption = '&Private key:'
       end
       object Label24: TLabel
         Left = 8
         Top = 8
-        Width = 234
+        Width = 305
         Height = 12
-        Caption = #32626#21517#12434#30906#35469#12375#12414#12377#12290#20844#38283#37749#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
+        Caption = 'Verification will be performed. Please specify a private key.'
       end
       object SignatureIsInvalidLabel: TLabel
         Left = 16
         Top = 296
-        Width = 169
+        Width = 100
         Height = 12
-        Caption = #32626#21517#12399#27491#24403#12394#29289#12391#12399#12354#12426#12414#12379#12435#12290
+        Caption = 'Signature is invalid.'
         Visible = False
       end
       object CheckSignatureButton: TButton
-        Left = 132
+        Left = 120
         Top = 256
-        Width = 82
+        Width = 105
         Height = 25
-        Caption = #12481#12455#12483#12463'(&S)'
+        Caption = 'Check &signature'
         Default = True
         Enabled = False
         TabOrder = 2
@@ -986,7 +988,7 @@ object SignMainForm: TSignMainForm
         Top = 174
         Width = 67
         Height = 25
-        Caption = #21442#29031'(&R) ...'
+        Caption = 'B&rowse...'
         TabOrder = 1
         OnClick = CheckSignFileNameRefButtonClick
       end

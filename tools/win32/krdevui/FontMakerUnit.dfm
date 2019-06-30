@@ -1,9 +1,9 @@
 object FontMakerForm: TFontMakerForm
-  Left = 3
-  Top = 100
+  Left = 423
+  Top = 181
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = #12524#12531#12480#12522#12531#12464#28168#12415#12501#12457#12531#12488#12487#12540#12479#20316#25104
+  Caption = 'Generate pre-rendered font files'
   ClientHeight = 257
   ClientWidth = 395
   Color = clBtnFace
@@ -608,29 +608,29 @@ object FontMakerForm: TFontMakerForm
     Top = 8
     Width = 377
     Height = 137
-    Caption = #12501#12457#12531#12488'(&F)'
+    Caption = '&Fonts'
     TabOrder = 0
     object Label1: TLabel
       Left = 8
       Top = 20
-      Width = 76
+      Width = 58
       Height = 12
-      Caption = #12501#12457#12531#12488#21517'(&N) : '
+      Caption = 'Font &Name:'
       FocusControl = FontSelectComboBox
     end
     object Label2: TLabel
       Left = 8
       Top = 68
-      Width = 108
+      Width = 118
       Height = 12
-      Caption = #12469#12452#12474'('#25991#23383#39640#12373')(&S) :'
+      Caption = '&Size (character height):'
     end
     object Label3: TLabel
       Left = 200
       Top = 68
-      Width = 43
+      Width = 12
       Height = 12
-      Caption = #12500#12463#12475#12523
+      Caption = 'px'
     end
     object FontSelectComboBox: TComboBox
       Left = 88
@@ -669,7 +669,7 @@ object FontMakerForm: TFontMakerForm
       Top = 88
       Width = 81
       Height = 17
-      Caption = #22826#23383'(&B)'
+      Caption = '&Bold'
       TabOrder = 5
       OnClick = BoldCheckBoxClick
     end
@@ -678,7 +678,7 @@ object FontMakerForm: TFontMakerForm
       Top = 64
       Width = 105
       Height = 20
-      Caption = #12469#12531#12503#12523#12434#34920#31034'(&V)'
+      Caption = 'Show sample &visual'
       TabOrder = 7
       OnClick = ShowSampleButtonClick
     end
@@ -687,7 +687,7 @@ object FontMakerForm: TFontMakerForm
       Top = 104
       Width = 233
       Height = 17
-      Caption = #12501#12457#12531#12488#20869#12398#12377#12409#12390#12398#25991#23383#12434#21547#12417#12427'(&U)'
+      Caption = 'Incl&ude all characters in font'
       Enabled = False
       TabOrder = 6
       OnClick = IncludeAllFontCharsCheckBoxClick
@@ -697,7 +697,7 @@ object FontMakerForm: TFontMakerForm
       Top = 88
       Width = 145
       Height = 17
-      Caption = #12450#12531#12481#12456#12452#12522#12450#12473'(&A)'
+      Caption = '&Anti-aliasing'
       Checked = True
       State = cbChecked
       TabOrder = 4
@@ -708,7 +708,7 @@ object FontMakerForm: TFontMakerForm
       Top = 40
       Width = 265
       Height = 17
-      Caption = #12377#12409#12390#12398' TrueType '#12501#12457#12531#12488#12434#34920#31034'(&T)'
+      Caption = 'Show &all TrueType fonts'
       TabOrder = 1
       OnClick = ShowAllFontsCheckBoxClick
     end
@@ -717,7 +717,7 @@ object FontMakerForm: TFontMakerForm
       Top = 104
       Width = 121
       Height = 17
-      Caption = #22806#23383#12434#21547#12417#12427'(&P)'
+      Caption = 'Include &private chars'
       Checked = True
       State = cbChecked
       TabOrder = 8
@@ -729,7 +729,7 @@ object FontMakerForm: TFontMakerForm
     Top = 152
     Width = 377
     Height = 65
-    Caption = #20986#21147#12501#12449#12452#12523'(&O)'
+    Caption = '&Output'
     TabOrder = 1
     object OutputEdit: TEdit
       Left = 8
@@ -743,7 +743,7 @@ object FontMakerForm: TFontMakerForm
       Top = 26
       Width = 75
       Height = 20
-      Caption = #21442#29031'(&R) ...'
+      Caption = '&Reference...'
       TabOrder = 1
       OnClick = OutputRefButtonClick
     end
@@ -753,7 +753,7 @@ object FontMakerForm: TFontMakerForm
     Top = 224
     Width = 75
     Height = 25
-    Caption = #20316#25104'(&G) ...'
+    Caption = '&Generate'
     Default = True
     TabOrder = 2
     OnClick = CreateButtonClick
@@ -763,15 +763,15 @@ object FontMakerForm: TFontMakerForm
     Top = 224
     Width = 75
     Height = 25
-    Caption = #38281#12376#12427'(&C)'
+    Caption = '&Close'
     TabOrder = 3
     OnClick = CancelButtonClick
   end
   object SaveDialog: TSaveDialog
     DefaultExt = 'tft'
-    Filter = #21513#37324#21513#37324' pre-rendered font (*.tft)|*.tft'
+    Filter = 'KiriKiri pre-rendered font (*.tft)|*.tft'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
-    Title = #20986#21147#12501#12449#12452#12523' ...'
+    Title = 'Output file...'
     Left = 320
     Top = 144
   end

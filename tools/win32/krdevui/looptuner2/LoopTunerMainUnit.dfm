@@ -1,6 +1,6 @@
 object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
-  Left = 61
-  Top = 23
+  Left = 428
+  Top = 61
   Width = 638
   Height = 354
   Caption = '(//designing//)'
@@ -986,7 +986,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       Top = 2
       Width = 17
       Height = 17
-      Hint = #12501#12521#12464#12434#20840#12390'0'#12395#12375#12414#12377
+      Hint = 'Set all flags to 0'
       Caption = 'C'
       Flat = True
       Font.Charset = SHIFTJIS_CHARSET
@@ -1245,7 +1245,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
     Left = 40
     Top = 64
     object FileMenu: TMenuItem
-      Caption = #12501#12449#12452#12523'(&F)'
+      Caption = '&File'
       object OpenMenuItem: TMenuItem
         Action = OpenAction
       end
@@ -1260,7 +1260,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       end
     end
     object EditMenu: TMenuItem
-      Caption = #32232#38598'(&E)'
+      Caption = '&Edit'
       object UndoMenuItem: TMenuItem
         Action = UndoAction
       end
@@ -1281,7 +1281,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       end
       object NewLinkOnPlayMenuItem: TMenuItem
         Action = NewLinkOnPlayAction
-        Caption = #20877#29983#20301#32622#12395#12521#12505#12523#12434#20316#25104'(&A)'#9'A '#12414#12383#12399' S'
+        Caption = 'Create label at playback position &A or S'
       end
       object NewLinkOnPlay_A_MenuItem: TMenuItem
         Action = NewLinkOnPlayAction
@@ -1299,7 +1299,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       end
     end
     object ViewMenu: TMenuItem
-      Caption = #34920#31034'(&V)'
+      Caption = '&View'
       object ZoomInMenuItem: TMenuItem
         Action = ZoomInAction
       end
@@ -1323,7 +1323,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       end
     end
     object PlayMenu: TMenuItem
-      Caption = #20877#29983'(&P)'
+      Caption = '&Playback'
       object StopPlayMenuItem: TMenuItem
         Action = StopPlayAction
       end
@@ -1338,7 +1338,7 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
       end
     end
     object HelpMenu: TMenuItem
-      Caption = #12504#12523#12503'(&H)'
+      Caption = '&Help'
       object ShowHelpMenuItem: TMenuItem
         Action = ShowHelpAction
       end
@@ -1352,201 +1352,201 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
     Left = 8
     Top = 64
     object ShowStatusBarAction: TAction
-      Category = #34920#31034
-      Caption = #12473#12486#12540#12479#12473#12496#12540#12398#34920#31034'(&S)'
-      Hint = #12473#12486#12540#12479#12473#12496#12540#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Show &status bar'
+      Hint = 'Display the status bar'
       OnExecute = ShowStatusBarActionExecute
     end
     object ShowTotalViewAction: TAction
-      Category = #34920#31034
-      Caption = #32302#23567#27874#24418#12398#34920#31034'(&E)'
-      Hint = #12469#12454#12531#12489#20840#20307#12434#35211#28193#12379#12427#27874#24418#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Display &entire waveform'
+      Hint = 'Display a waveform that encases the entire sound'
       OnExecute = ShowTotalViewActionExecute
     end
     object StopPlayAction: TAction
-      Category = #20877#29983
-      Caption = #20572#27490'(&Q)'
-      Hint = #29694#22312#12398#20877#29983#12434#20572#27490#12375#12414#12377
+      Category = 'Playback'
+      Caption = 'Stop (&Q)'
+      Hint = 'Stop playing'
       ImageIndex = 4
       ShortCut = 81
       OnExecute = StopPlayActionExecute
     end
     object PlayFromCaretAction: TAction
-      Category = #20877#29983
-      Caption = #29694#22312#20301#32622#12363#12425#20877#29983'(&C)'
-      Hint = #29694#22312#12398#12461#12515#12524#12483#12488#20301#32622#12363#12425#20877#29983#12375#12414#12377
+      Category = 'Playback'
+      Caption = 'Play from &current position'
+      Hint = 'Play from the current position'
       ImageIndex = 1
       ShortCut = 32
       OnExecute = PlayFromCaretActionExecute
     end
     object PlayFromStartAction: TAction
-      Category = #20877#29983
-      Caption = #21021#12417#12363#12425#20877#29983'(&P)'
-      Hint = #12469#12454#12531#12489#12398#20808#38957#12363#12425#20877#29983#12375#12414#12377
+      Category = 'Playback'
+      Caption = '&Play from the beginning'
+      Hint = 'Play from the beginning'
       ImageIndex = 0
       ShortCut = 80
       OnExecute = PlayFromStartActionExecute
     end
     object ShowToolBarAction: TAction
-      Category = #34920#31034
-      Caption = #12484#12540#12523#12496#12540#12398#34920#31034'(&T)'
-      Hint = #12484#12540#12523#12496#12540#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Show &Toolbar'
+      Hint = 'Show the toolbar'
       OnExecute = ShowToolBarActionExecute
     end
     object ZoomInAction: TAction
-      Category = #34920#31034
-      Caption = #12474#12540#12512#12539#12452#12531'(&I)'
-      Hint = #27874#24418#12434#12474#12540#12512#12452#12531#12375#12414#12377
+      Category = 'View'
+      Caption = 'Zoom &In'
+      Hint = 'Zoom in the waveform'
       ImageIndex = 9
       ShortCut = 73
       OnExecute = ZoomInActionExecute
     end
     object OpenAction: TAction
-      Category = #12501#12449#12452#12523
-      Caption = #38283#12367'(&O)...'
-      Hint = #12501#12449#12452#12523#12434#38283#12365#12414#12377
+      Category = 'File'
+      Caption = '&Open...'
+      Hint = 'Open a file'
       ImageIndex = 5
       ShortCut = 16463
       OnExecute = OpenActionExecute
     end
     object ZoomOutAction: TAction
-      Category = #34920#31034
-      Caption = #12474#12540#12512#12539#12450#12454#12488'(&O)'
-      Hint = #27874#24418#12434#12474#12540#12512#12450#12454#12488#12375#12414#12377
+      Category = 'View'
+      Caption = 'Zoom &Out'
+      Hint = 'Zoom out the waveform'
       ImageIndex = 10
       ShortCut = 79
       OnExecute = ZoomOutActionExecute
     end
     object ShowEditFlagsAction: TAction
-      Category = #34920#31034
-      Caption = #12501#12521#12464#12398#34920#31034'(&G)'
-      Hint = #12501#12521#12464#32232#38598#12496#12540#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Show fla&gs'
+      Hint = 'Display the flag edit bar'
       ImageIndex = 35
       OnExecute = ShowEditFlagsActionExecute
     end
     object FollowMarkerAction: TAction
-      Category = #34920#31034
-      Caption = #20877#29983#20301#32622#12395#30011#38754#12434#36861#24467'(&F)'
-      Hint = #20877#29983#20301#32622#12395#30011#38754#12434#36861#24467#12375#12414#12377
+      Category = 'View'
+      Caption = '&Follow the screen to the playback position'
+      Hint = 'Follow the screen to the playback position'
       ImageIndex = 11
       ShortCut = 70
       OnExecute = FollowMarkerActionExecute
     end
     object SaveAction: TAction
-      Category = #12501#12449#12452#12523
-      Caption = #20445#23384'(&S)'
-      Hint = #12501#12449#12452#12523#12434#20445#23384#12375#12414#12377
+      Category = 'File'
+      Caption = '&Save'
+      Hint = 'Save the file'
       ImageIndex = 6
       ShortCut = 16467
       OnExecute = SaveActionExecute
     end
     object UndoAction: TAction
-      Category = #32232#38598
-      Caption = #20803#12395#25147#12377'(&U)'
-      Hint = #26368#24460#12398#32232#38598#12434#21462#12426#28040#12375#12289#30452#21069#12398#29366#24907#12395#25147#12375#12414#12377
+      Category = 'Edit'
+      Caption = '&Undo'
+      Hint = 'Cancel the previous edit and return to the previous state'
       ImageIndex = 12
       ShortCut = 16474
       OnExecute = UndoActionExecute
     end
     object RedoAction: TAction
-      Category = #32232#38598
-      Caption = #12420#12426#30452#12375'(&R)'
-      Hint = #12300#20803#12395#25147#12377#12301#12391#20803#12395#25147#12375#12383#22793#26356#12434#20877#24230#36969#29992#12375#12414#12377
+      Category = 'Edit'
+      Caption = '&Redo'
+      Hint = 'Replay changes made when "Undo" is activated'
       ImageIndex = 13
       ShortCut = 24666
       OnExecute = RedoActionExecute
     end
     object DeleteAction: TAction
-      Category = #32232#38598
-      Caption = #21066#38500'(&D)'
-      Hint = #29694#22312#36984#25246#12373#12428#12390#12356#12427#12450#12452#12486#12512#12434#21066#38500#12375#12414#12377
+      Category = 'Edit'
+      Caption = '&Delete'
+      Hint = 'Delete the selected item'
       ImageIndex = 14
       ShortCut = 46
       OnExecute = DeleteActionExecute
     end
     object NewLinkAction: TAction
-      Category = #32232#38598
-      Caption = #26032#35215#12522#12531#12463#12434#20316#25104'(&J)'
-      Hint = #26032#12375#12356#12522#12531#12463#12434#20316#25104#12375#12414#12377
+      Category = 'Edit'
+      Caption = 'Create new link (&J)'
+      Hint = 'Create a new link'
       ImageIndex = 15
       ShortCut = 74
       OnExecute = NewLinkActionExecute
     end
     object NewLabelAction: TAction
-      Category = #32232#38598
-      Caption = #26032#35215#12521#12505#12523#12434#20316#25104'(&L)'
-      Hint = #26032#12375#12356#12521#12505#12523#12434#20316#25104#12375#12414#12377
+      Category = 'Edit'
+      Caption = 'Create new &label'
+      Hint = 'Create a new label'
       ImageIndex = 16
       ShortCut = 76
       OnExecute = NewLabelActionExecute
     end
     object EditLinkDetailAction: TAction
-      Category = #32232#38598
-      Caption = #12522#12531#12463#12398#32232#38598'(&T) ...'
-      Hint = #12522#12531#12463#12398#35443#32048#12434#32232#38598#12375#12414#12377
+      Category = 'Edit'
+      Caption = 'Edi&t link'
+      Hint = 'Edit link details'
       ImageIndex = 31
       OnExecute = EditLinkDetailActionExecute
     end
     object EditLabelDetailAction: TAction
-      Category = #32232#38598
-      Caption = #12521#12505#12523#12434#32232#38598'(&E) ...'
-      Hint = #12521#12505#12523#12434#32232#38598#12375#12414#12377
+      Category = 'Edit'
+      Caption = '&Edit label...'
+      Hint = 'Edit the label'
       ImageIndex = 17
       OnExecute = EditLabelDetailActionExecute
     end
     object GotoLinkFromAction: TAction
-      Category = #34920#31034
-      Caption = #12522#12531#12463#20803#12395#31227#21205'(&B)'
-      Hint = #12522#12531#12463#20803#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Jump to link source (&B)'
+      Hint = 'Display link source'
       ImageIndex = 33
       ShortCut = 66
       OnExecute = GotoLinkFromActionExecute
     end
     object GotoLinkToAction: TAction
-      Category = #34920#31034
-      Caption = #12522#12531#12463#20808#12395#31227#21205'(&N)'
-      Hint = #12522#12531#12463#20808#12434#34920#31034#12375#12414#12377
+      Category = 'View'
+      Caption = 'Jump to link target (&N)'
+      Hint = 'Display link target'
       ImageIndex = 34
       ShortCut = 78
       OnExecute = GotoLinkToActionExecute
     end
     object IgnoreLinksAction: TAction
-      Category = #20877#29983
-      Caption = #12522#12531#12463#12434#28961#35222#12375#12390#20877#29983'(&G)'
-      Hint = #12522#12531#12463#12434#28961#35222#12375#12289#12472#12515#12531#12503#12379#12378#12395#20877#29983#12375#12414#12377
+      Category = 'Playback'
+      Caption = 'I&gnore links during playback'
+      Hint = 'Ignore links during playback'
       ImageIndex = 36
       ShortCut = 71
       OnExecute = IgnoreLinksActionExecute
     end
     object CloseAction: TAction
-      Category = #12501#12449#12452#12523
-      Caption = #32066#20102'(&X)'
-      Hint = #12523#12540#12503#12481#12517#12540#12490#12434#32066#20102#12375#12414#12377
+      Category = 'File'
+      Caption = 'Close (&X)'
+      Hint = 'Close Loop Tuner'
       OnExecute = CloseActionExecute
     end
     object ShowHelpAction: TAction
-      Category = #12504#12523#12503
-      Caption = #12504#12523#12503'(&H) ...'
-      Hint = #12523#12540#12503#12481#12517#12540#12490#12398#12504#12523#12503#12434#34920#31034#12375#12414#12377
+      Category = 'Help'
+      Caption = '&Help...'
+      Hint = 'Display Loop Tuner help'
       OnExecute = ShowHelpActionExecute
     end
     object ShowAboutAction: TAction
-      Category = #12504#12523#12503
-      Caption = #12523#12540#12503#12481#12517#12540#12490#12395#12388#12356#12390'(&A) ...'
-      Hint = #12523#12540#12503#12481#12517#12540#12490#12398#33879#20316#27177#12539#12496#12540#12472#12519#12531#24773#22577#12434#34920#31034#12375#12414#12377
+      Category = 'Help'
+      Caption = '&About Loop Tuner...'
+      Hint = 'Display Loop Tuner version/copyright information'
       OnExecute = ShowAboutActionExecute
     end
     object ClearAllLabelsAction: TAction
-      Category = #32232#38598
-      Caption = #20840#12390#12398#12521#12505#12523#12434#12463#12522#12450'(&Q)'
-      Hint = #20840#12390#12398#12521#12505#12523#12434#21066#38500#12375#12414#12377
+      Category = 'Edit'
+      Caption = 'Clear all labels (&Q)'
+      Hint = 'Deletes all labels'
       ImageIndex = 39
       OnExecute = ClearAllLabelsActionExecute
     end
     object NewLinkOnPlayAction: TAction
-      Category = #32232#38598
-      Caption = #20877#29983#20301#32622#12395#12521#12505#12523#12434#20316#25104'(&A)'
-      Hint = #29694#22312#12398#20877#29983#20301#32622#12395#26032#35215#12521#12505#12523#12434#20316#25104#12375#12414#12377
+      Category = 'Edit'
+      Caption = 'Create label at the pl&ayback position'
+      Hint = 'Creates a new label at the current playback position'
       ImageIndex = 40
       OnExecute = NewLinkOnPlayActionExecute
     end
@@ -3216,19 +3216,19 @@ object TSSLoopTuner2MainForm: TTSSLoopTuner2MainForm
     Left = 152
     Top = 64
     object FlagsEditToggleMenuItem: TMenuItem
-      Caption = #12488#12464#12523'(&T)'
+      Caption = '&Toggle'
       Default = True
-      Hint = #20516#12364'0'#20197#22806#12394#12425#12400'0'#12395#12289'0'#12394#12425#12400'1'#12395#12375#12414#12377
+      Hint = 'Set flags to 0 if not 0, and 1 if it is 0'
       OnClick = FlagsEditToggleMenuItemClick
     end
     object FlagsEditZeroMenuItem: TMenuItem
-      Caption = '&0'#12395#12377#12427
-      Hint = #20516#12434'0'#12395#12375#12414#12377
+      Caption = 'Set to &0'
+      Hint = 'Set the value to 0'
       OnClick = FlagsEditZeroMenuItemClick
     end
     object FlasgEditOneMenuItem: TMenuItem
-      Caption = '&1'#12395#12377#12427
-      Hint = #20516#12434'1'#12395#12375#12414#12377
+      Caption = 'Set to &1'
+      Hint = 'Set the value to 1'
       OnClick = FlasgEditOneMenuItemClick
     end
   end

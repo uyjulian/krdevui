@@ -1,10 +1,10 @@
 object LogViewerForm: TLogViewerForm
-  Left = 47
-  Top = 354
+  Left = 290
+  Top = 336
   Width = 463
   Height = 328
   BorderWidth = 10
-  Caption = #12525#12464
+  Caption = 'Log'
   Color = clBtnFace
   Constraints.MinHeight = 100
   Constraints.MinWidth = 200
@@ -31,7 +31,7 @@ object LogViewerForm: TLogViewerForm
       Top = 8
       Width = 75
       Height = 25
-      Caption = #38281#12376#12427
+      Caption = 'Close'
       Default = True
       ModalResult = 1
       TabOrder = 0

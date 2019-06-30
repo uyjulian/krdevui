@@ -8,7 +8,7 @@ object FolderSelectorForm: TFolderSelectorForm
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
   ActiveControl = ShellTreeView
-  Caption = #12501#12457#12523#12480'/'#12450#12540#12459#12452#12502#12398#36984#25246
+  Caption = 'Folder/Archive Selection'
   Color = clBtnFace
   Constraints.MinHeight = 225
   Constraints.MinWidth = 300
@@ -1450,41 +1450,41 @@ object FolderSelectorForm: TFolderSelectorForm
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 216
+    Width = 115
     Height = 12
-    Caption = #12501#12457#12523#12480'/'#12450#12540#12459#12452#12502#12434#36984#25246#12375#12390#12367#12384#12373#12356'(&F) :'
+    Caption = 'Select &Folder/Archive:'
     FocusControl = ShellTreeView
   end
   object Label2: TLabel
     Left = 8
     Top = 356
-    Width = 42
+    Width = 49
     Height = 12
     Anchors = [akLeft, akBottom]
-    Caption = #36984#25246#20013' :'
+    Caption = 'Selection:'
   end
   object FileLabel: TLabel
     Left = 120
     Top = 384
-    Width = 53
+    Width = 27
     Height = 12
-    Caption = ' ('#12501#12449#12452#12523')'
+    Caption = '(File)'
     Visible = False
   end
   object FolderLabel: TLabel
     Left = 208
     Top = 384
-    Width = 55
+    Width = 40
     Height = 12
-    Caption = ' ('#12501#12457#12523#12480')'
+    Caption = '(Folder)'
     Visible = False
   end
   object NothingLabel: TLabel
     Left = 296
     Top = 384
-    Width = 28
+    Width = 34
     Height = 12
-    Caption = '('#12394#12375')'
+    Caption = '(None)'
     Visible = False
   end
   object ViewPanel: TPanel
@@ -1571,7 +1571,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     ModalResult = 2
     TabOrder = 1
   end
@@ -1581,7 +1581,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Width = 81
     Height = 25
     Anchors = [akLeft, akBottom]
-    Caption = #36984#25246#12375#12394#12356'(&N)'
+    Caption = 'Do &not select'
     ModalResult = 3
     TabOrder = 2
   end

@@ -3,7 +3,7 @@ object FontPreviewForm: TFontPreviewForm
   Top = 114
   Width = 599
   Height = 390
-  Caption = #12501#12457#12531#12488#12469#12531#12503#12523
+  Caption = 'Font sample visual'
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
@@ -37,22 +37,22 @@ object FontPreviewForm: TFontPreviewForm
       TabOrder = 0
       OnChange = ZoomComboBoxChange
       Items.Strings = (
-        #25313#22823#29575' '#31561#20493
-        #25313#22823#29575' 2'#20493
-        #25313#22823#29575' 3'#20493
-        #25313#22823#29575' 4'#20493
-        #25313#22823#29575' 5'#20493
-        #25313#22823#29575' 6'#20493
-        #25313#22823#29575' 7'#20493
-        #25313#22823#29575' 8'#20493
-        #25313#22823#29575' 9'#20493
-        #25313#22823#29575' 10'#20493
-        #25313#22823#29575' 11'#20493
-        #25313#22823#29575' 12'#20493
-        #25313#22823#29575' 13'#20493
-        #25313#22823#29575' 14'#20493
-        #25313#22823#29575' 15'#20493
-        #25313#22823#29575' 16'#20493)
+        '1x'
+        '2x'
+        '3x'
+        '4x'
+        '5x'
+        '6x'
+        '7x'
+        '8x'
+        '9x'
+        '10x'
+        '11x'
+        '12x'
+        '13x'
+        '14x'
+        '15x'
+        '16x')
     end
     object CloseButton: TButton
       Left = 176
@@ -60,7 +60,7 @@ object FontPreviewForm: TFontPreviewForm
       Width = 75
       Height = 20
       Cancel = True
-      Caption = #38281#12376#12427'(&C)'
+      Caption = '&Close'
       TabOrder = 1
       OnClick = CloseButtonClick
     end

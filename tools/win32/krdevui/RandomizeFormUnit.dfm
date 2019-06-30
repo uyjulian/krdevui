@@ -2,7 +2,7 @@ object RandomizeForm: TRandomizeForm
   Left = 429
   Top = 26
   BorderStyle = bsDialog
-  Caption = #12456#12531#12488#12525#12500#12540#12434#21454#38598#20013
+  Caption = 'Collecting Entropy'
   ClientHeight = 182
   ClientWidth = 215
   Color = clBtnFace
@@ -16,43 +16,35 @@ object RandomizeForm: TRandomizeForm
   PixelsPerInch = 96
   TextHeight = 12
   object Label1: TLabel
-    Left = 64
+    Left = 24
     Top = 48
-    Width = 87
+    Width = 172
     Height = 12
     Alignment = taCenter
-    Caption = #12510#12454#12473#12459#12540#12477#12523#12434
+    Caption = 'Move the mouse cursor randomly.'
   end
   object Label2: TLabel
-    Left = 44
+    Left = 12
     Top = 80
-    Width = 126
+    Width = 187
     Height = 12
     Alignment = taCenter
-    Caption = #12375#12400#12425#12367#12510#12454#12473#12434#21205#12363#12377#12392
+    Caption = 'This window will close automatically'
   end
   object Label3: TLabel
     Left = 21
     Top = 96
-    Width = 173
+    Width = 172
     Height = 12
     Alignment = taCenter
-    Caption = #12371#12398#12454#12451#12531#12489#12454#12399#33258#21205#30340#12395#38281#12376#12414#12377
-  end
-  object Label5: TLabel
-    Left = 35
-    Top = 64
-    Width = 145
-    Height = 12
-    Alignment = taCenter
-    Caption = #12391#12383#12425#12417#12395#21205#12363#12375#12390#12367#12384#12373#12356#12290
+    Caption = 'after you move the mouse cursor.'
   end
   object Label7: TLabel
-    Left = 27
+    Left = 43
     Top = 8
-    Width = 161
+    Width = 122
     Height = 12
-    Caption = #12300#12391#12383#12425#12417#12373#12301#12364#24517#35201#12392#12394#12426#12414#12377#12290
+    Caption = 'Random data is needed.'
   end
   object CancelButton: TButton
     Left = 59
@@ -60,7 +52,7 @@ object RandomizeForm: TRandomizeForm
     Width = 97
     Height = 25
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523'(&C)'
+    Caption = '&Cancel'
     ModalResult = 2
     TabOrder = 0
   end

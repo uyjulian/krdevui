@@ -4,7 +4,7 @@ object LabelDetailForm: TLabelDetailForm
   ActiveControl = EditLabelAttribFrame.LabelNameEdit
   BorderStyle = bsDialog
   BorderWidth = 8
-  Caption = #12521#12505#12523#12398#32232#38598
+  Caption = 'Edit Label'
   ClientHeight = 66
   ClientWidth = 380
   Color = clBtnFace
@@ -44,7 +44,7 @@ object LabelDetailForm: TLabelDetailForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     TabOrder = 2
     OnClick = CancelButtonClick
   end

@@ -2,7 +2,7 @@ object FontMakerWriteForm: TFontMakerWriteForm
   Left = 104
   Top = 188
   BorderStyle = bsDialog
-  Caption = #20316#25104#20013' ...'
+  Caption = 'Rendering...'
   ClientHeight = 64
   ClientWidth = 227
   Color = clBtnFace
@@ -32,7 +32,7 @@ object FontMakerWriteForm: TFontMakerWriteForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     Enabled = False
     TabOrder = 1
     OnClick = CancelButtonClick

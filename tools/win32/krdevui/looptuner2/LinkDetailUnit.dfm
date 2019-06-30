@@ -1,10 +1,10 @@
 object LinkDetailForm: TLinkDetailForm
-  Left = 43
-  Top = 230
+  Left = 473
+  Top = 238
   Width = 637
   Height = 350
   ActiveControl = WaveAreaPanel
-  Caption = #12522#12531#12463#12398#32232#38598
+  Caption = 'Edit Link'
   Color = clBtnFace
   Constraints.MinHeight = 189
   Constraints.MinWidth = 612
@@ -159,10 +159,10 @@ object LinkDetailForm: TLinkDetailForm
     object PlayBeforeLabel: TLabel
       Left = 304
       Top = 5
-      Width = 109
+      Width = 148
       Height = 12
-      Hint = #12522#12531#12463#12414#12391#12354#12392' %.1f '#31186
-      Caption = #12522#12531#12463#12414#12391#12354#12392' %.1f '#31186
+      Hint = 'Play %.1f seconds before link'
+      Caption = 'Play %.1f seconds before link'
       Visible = False
     end
     object BottomToolBar: TToolBar
@@ -270,7 +270,7 @@ object LinkDetailForm: TLinkDetailForm
       end
     end
     object OKButton: TButton
-      Left = 454
+      Left = 462
       Top = 2
       Width = 75
       Height = 25
@@ -287,7 +287,7 @@ object LinkDetailForm: TLinkDetailForm
       Height = 25
       Anchors = [akTop, akRight]
       Cancel = True
-      Caption = #12461#12515#12531#12475#12523
+      Caption = 'Cancel'
       TabOrder = 3
       OnClick = CancelButtonClick
     end
@@ -337,10 +337,10 @@ object LinkDetailForm: TLinkDetailForm
     object AfterLinkLabel: TLabel
       Left = 568
       Top = 8
-      Width = 45
+      Width = 58
       Height = 12
       Anchors = [akTop, akRight]
-      Caption = #12522#12531#12463#24460
+      Caption = 'After link'
       Font.Charset = SHIFTJIS_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -352,9 +352,9 @@ object LinkDetailForm: TLinkDetailForm
     object BeforeLinkLabel: TLabel
       Left = 16
       Top = 8
-      Width = 45
+      Width = 67
       Height = 12
-      Caption = #12522#12531#12463#21069
+      Caption = 'Before link'
       Font.Charset = SHIFTJIS_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
@@ -369,175 +369,175 @@ object LinkDetailForm: TLinkDetailForm
     Left = 456
     Top = 24
     object StopPlayAction: TAction
-      Category = #20877#29983
-      Caption = #20877#29983#20572#27490'(&Q)'
-      Hint = #20877#29983#12434#20572#27490
+      Category = 'Playback'
+      Caption = 'Stop Playback (&Q)'
+      Hint = 'Stop playing'
       ImageIndex = 4
       ShortCut = 81
       OnExecute = StopPlayActionExecute
     end
     object ZoomInAction: TAction
-      Category = #34920#31034
-      Caption = #12474#12540#12512#12539#12452#12531'(&I)'
-      Hint = #27874#24418#12434#25313#22823#12377#12427
+      Category = 'Display'
+      Caption = 'Zoom &In'
+      Hint = 'Enlarge the waveform'
       ImageIndex = 9
       ShortCut = 73
       OnExecute = ZoomInActionExecute
     end
     object ZoomOutAction: TAction
-      Category = #34920#31034
-      Caption = #12474#12540#12512#12539#12450#12454#12488'(&O)'
-      Hint = #27874#24418#12434#32302#23567#12377#12427
+      Category = 'Display'
+      Caption = 'Zoom &Out'
+      Hint = 'Shrink the waveform'
       ImageIndex = 10
       ShortCut = 79
       OnExecute = ZoomOutActionExecute
     end
     object PlayHalfSecAction: TAction
-      Category = #20877#29983
-      Caption = '0.5'#31186#21069#12363#12425#20877#29983'(&0)'
-      Hint = '0.5'#31186#21069#12363#12425#20877#29983
+      Category = 'Playback'
+      Caption = 'Play from &0.5 seconds ago'
+      Hint = 'Play from 0.5 seconds ago'
       ImageIndex = 25
       ShortCut = 16432
       OnExecute = PlayHalfSecActionExecute
     end
     object Play1SecAction: TAction
-      Category = #20877#29983
-      Caption = '1'#31186#21069#12363#12425#20877#29983'(&1)'
-      Hint = '1'#31186#21069#12363#12425#20877#29983
+      Category = 'Playback'
+      Caption = 'Play from &1 second ago'
+      Hint = 'Play from 1 second ago'
       ImageIndex = 26
       ShortCut = 16433
       OnExecute = Play1SecActionExecute
     end
     object Play2SecAction: TAction
-      Category = #20877#29983
-      Caption = '2'#31186#21069#12363#12425#20877#29983'(&2)'
-      Hint = '2'#31186#21069#12363#12425#20877#29983
+      Category = 'Playback'
+      Caption = 'Play from &2 seconds ago'
+      Hint = 'Play from 2 seconds ago'
       ImageIndex = 27
       ShortCut = 16434
       OnExecute = Play2SecActionExecute
     end
     object Play3SecAction: TAction
-      Category = #20877#29983
-      Caption = '3'#31186#21069#12363#12425#20877#29983'(&3)'
-      Hint = '3'#31186#21069#12363#12425#20877#29983
+      Category = 'Playback'
+      Caption = 'Play from &3 seconds ago'
+      Hint = 'Play from 3 seconds ago'
       ImageIndex = 28
       ShortCut = 16435
       OnExecute = Play3SecActionExecute
     end
     object Play5SecAction: TAction
-      Category = #20877#29983
-      Caption = '5'#31186#21069#12363#12425#20877#29983'(&5)'
-      Hint = '5'#31186#21069#12363#12425#20877#29983
+      Category = 'Playback'
+      Caption = 'Play from &5 seconds ago'
+      Hint = 'Play from 5 seconds ago'
       ImageIndex = 29
       ShortCut = 16437
       OnExecute = Play5SecActionExecute
     end
     object SmoothAction: TAction
-      Category = #23646#24615
-      Caption = #12473#12512#12540#12474'(&S)'
-      Hint = #12522#12531#12463#12434#12473#12512#12540#12474#12395#12377#12427
+      Category = 'Attribute'
+      Caption = '&Smooth'
+      Hint = 'Smoothen the link'
       ImageIndex = 30
       ShortCut = 77
       OnExecute = SmoothActionExecute
     end
     object BeforePrevCrossAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&A)'
-      Hint = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
+      Category = 'Before link'
+      Caption = 'Jump to previous crossing point (&A)'
+      Hint = 'Jump to previous crossing point'
       ImageIndex = 22
       ShortCut = 65
       OnExecute = BeforePrevCrossActionExecute
     end
     object BeforePrevFastAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #21069#12408'20'#12473#12486#12483#12503'(&S)'
-      Hint = #21069#12408'20'#12473#12486#12483#12503
+      Category = 'Before link'
+      Caption = 'Step backward&s by 20 samples'
+      Hint = 'Step backwards by 20 samples'
       ImageIndex = 23
       ShortCut = 83
       OnExecute = BeforePrevFastActionExecute
     end
     object BeforePrevStepAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #21069#12408'1'#12473#12486#12483#12503'(&D)'
-      Hint = #21069#12408'1'#12473#12486#12483#12503
+      Category = 'Before link'
+      Caption = 'Step backwar&ds by 1 sample'
+      Hint = 'Step backwards by 1 sample'
       ImageIndex = 21
       ShortCut = 68
       OnExecute = BeforePrevStepActionExecute
     end
     object BeforeNextStepAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #27425#12408'1'#12473#12486#12483#12503'(&F)'
-      Hint = #27425#12408'1'#12473#12486#12483#12503
+      Category = 'Before link'
+      Caption = 'Step &forward by 1 sample'
+      Hint = 'Step forward by 1 sample'
       ImageIndex = 18
       ShortCut = 70
       OnExecute = BeforeNextStepActionExecute
     end
     object BeforeNextFastAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #27425#12408'20'#12473#12486#12483#12503'(&G)'
-      Hint = #27425#12408'20'#12473#12486#12483#12503
+      Category = 'Before link'
+      Caption = 'Step forward by 20 samples (&G)'
+      Hint = 'Step forward by 20 samples'
       ImageIndex = 20
       ShortCut = 71
       OnExecute = BeforeNextFastActionExecute
     end
     object BeforeNextCrossAction: TAction
-      Category = #12522#12531#12463#21069
-      Caption = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&H)'
-      Hint = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
+      Category = 'Before link'
+      Caption = 'Jump to next crossing point (&H)'
+      Hint = 'Jump to next crossing point'
       ImageIndex = 19
       ShortCut = 72
       OnExecute = BeforeNextCrossActionExecute
     end
     object AfterPrevCrossAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&Z)'
-      Hint = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
+      Category = 'After link'
+      Caption = 'Jump to previous crossing point (&Z)'
+      Hint = 'Jump to previous crossing point'
       ImageIndex = 22
       ShortCut = 90
       OnExecute = AfterPrevCrossActionExecute
     end
     object AfterPrevFastAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #21069#12408'20'#12473#12486#12483#12503'(&X)'
-      Hint = #21069#12408'20'#12473#12486#12483#12503
+      Category = 'After link'
+      Caption = 'Step backwards by 20 samples (&X)'
+      Hint = 'Step backwards by 20 samples'
       ImageIndex = 23
       ShortCut = 88
       OnExecute = AfterPrevFastActionExecute
     end
     object AfterPrevStepAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #21069#12408'1'#12473#12486#12483#12503'(&C)'
-      Hint = #21069#12408'1'#12473#12486#12483#12503
+      Category = 'After link'
+      Caption = 'Step backwards by 1 sample (&C)'
+      Hint = 'Step backwards by 1 sample'
       ImageIndex = 21
       ShortCut = 67
       OnExecute = AfterPrevStepActionExecute
     end
     object AfterNextStepAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #27425#12408'1'#12473#12486#12483#12503'(&V)'
-      Hint = #27425#12408'1'#12473#12486#12483#12503
+      Category = 'After link'
+      Caption = 'Step backwards by 1 sample (&V)'
+      Hint = 'Step backwards by 1 sample'
       ImageIndex = 18
       ShortCut = 86
       OnExecute = AfterNextStepActionExecute
     end
     object AfterNextFastAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #27425#12408'20'#12473#12486#12483#12503'(&B)'
-      Hint = #27425#12408'20'#12473#12486#12483#12503
+      Category = 'After link'
+      Caption = 'Step forward by 20 samples (&B)'
+      Hint = 'Step forward by 20 samples'
       ImageIndex = 20
       ShortCut = 66
       OnExecute = AfterNextFastActionExecute
     end
     object AfterNextCrossAction: TAction
-      Category = #12522#12531#12463#24460
-      Caption = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&N)'
-      Hint = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
+      Category = 'After link'
+      Caption = 'Jump to &next crossing point'
+      Hint = 'Jump to previous crossing point'
       ImageIndex = 19
       ShortCut = 78
       OnExecute = AfterNextCrossActionExecute
     end
     object PlayAction: TAction
-      Category = #20877#29983
+      Category = 'Playback'
       Caption = 'PlayAction'
       ImageIndex = 24
       ShortCut = 32
@@ -563,7 +563,7 @@ object LinkDetailForm: TLinkDetailForm
       Caption = '-'
     end
     object PlayMenuItem: TMenuItem
-      Caption = #20877#29983
+      Caption = 'Play'
       Default = True
       ImageIndex = 24
       ShortCut = 32

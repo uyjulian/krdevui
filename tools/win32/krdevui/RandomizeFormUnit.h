@@ -26,7 +26,6 @@ __published:	// IDE 管理のコンポーネント
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
-	TLabel *Label5;
 	TLabel *Label7;
 	TTimer *Timer;
 	void __fastcall TimerTimer(TObject *Sender);

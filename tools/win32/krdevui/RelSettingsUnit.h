@@ -42,7 +42,6 @@ __published:	// IDE 管理のコンポーネント
 	TLabel *Label1;
 	TLabel *Label2;
 	TLabel *Label3;
-	TLabel *Label4;
 	TLabel *Label5;
 	TButton *Button1;
 	TButton *Button2;
@@ -56,7 +55,6 @@ __published:	// IDE 管理のコンポーネント
 	TStaticText *StaticText1;
 	TLabel *Label7;
 	TLabel *Label8;
-	TLabel *Label9;
 	TLabel *NoExtNameLabel;
 	TSaveDialog *SaveDialog;
 	TTabSheet *ExeOptionsSheet;

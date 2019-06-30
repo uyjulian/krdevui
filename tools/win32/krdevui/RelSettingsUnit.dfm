@@ -1,13 +1,13 @@
 object RelSettingsForm: TRelSettingsForm
-  Left = 76
-  Top = 368
+  Left = 467
+  Top = 231
   Width = 630
   Height = 440
   HorzScrollBar.Tracking = True
   HorzScrollBar.Visible = False
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
-  Caption = #21513#37324#21513#37324' Releaser - '#35373#23450
+  Caption = 'KiriKiri Releaser - Configuration'
   Color = clBtnFace
   Constraints.MinHeight = 440
   Constraints.MinWidth = 630
@@ -178,46 +178,46 @@ object RelSettingsForm: TRelSettingsForm
   object NoExtNameLabel: TLabel
     Left = 206
     Top = 384
-    Width = 64
+    Width = 75
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = '('#25313#24373#23376#12394#12375')'
+    Caption = '(No extension)'
     Visible = False
   end
   object InterruptNameLabel: TLabel
     Left = 206
     Top = 392
-    Width = 24
+    Width = 43
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = #20013#26029
+    Caption = 'Interrupt'
     Visible = False
   end
   object ExitNameLabel: TLabel
     Left = 238
     Top = 392
-    Width = 24
+    Width = 20
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = #32066#20102
+    Caption = 'Exit'
     Visible = False
   end
   object ArchiveCreatedNameLabel: TLabel
     Left = 278
     Top = 384
-    Width = 128
+    Width = 99
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = #12450#12540#12459#12452#12502#12434#20316#25104#12375#12414#12375#12383
+    Caption = 'Created an archive.'
     Visible = False
   end
   object InterruptedNameLabel: TLabel
     Left = 270
     Top = 392
-    Width = 64
+    Width = 57
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = #20013#26029#12375#12414#12375#12383
+    Caption = 'Interrupted.'
     Visible = False
   end
   object ProgressLabel: TLabel
@@ -232,9 +232,9 @@ object RelSettingsForm: TRelSettingsForm
   object ExecutableCreatedNameLabel: TLabel
     Left = 288
     Top = 304
-    Width = 212
+    Width = 192
     Height = 12
-    Caption = 'EXE '#24418#24335#23455#34892#21487#33021#12501#12449#12452#12523#12434#20316#25104#12375#12414#12375#12383
+    Caption = 'Created an executable in EXE format.'
     Visible = False
   end
   object OKButton: TButton
@@ -243,7 +243,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
-    Caption = #20316#25104
+    Caption = 'Create'
     Default = True
     TabOrder = 0
     OnClick = OKButtonClick
@@ -255,7 +255,7 @@ object RelSettingsForm: TRelSettingsForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     TabOrder = 1
     OnClick = CancelButtonClick
   end
@@ -265,7 +265,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 137
     Height = 25
     Anchors = [akLeft, akBottom]
-    Caption = #12501#12457#12523#12480#36984#25246#12395#25147#12427'(&B)'
+    Caption = '&Back to folder selection'
     ModalResult = 4
     TabOrder = 2
   end
@@ -274,29 +274,29 @@ object RelSettingsForm: TRelSettingsForm
     Top = 8
     Width = 604
     Height = 361
-    ActivePage = OutputSheel
+    ActivePage = OptionSheet
     Anchors = [akLeft, akTop, akRight, akBottom]
-    TabIndex = 0
+    TabIndex = 2
     TabOrder = 3
     object OutputSheel: TTabSheet
-      Caption = #20986#21147
+      Caption = 'Output'
       DesignSize = (
         596
         334)
       object SpecifyOutputNameLabel: TLabel
         Left = 8
         Top = 136
-        Width = 169
+        Width = 184
         Height = 12
-        Caption = #20986#21147#12501#12449#12452#12523#21517#12434#25351#23450#12375#12390#12367#12384#12373#12356
+        Caption = 'Please specify the output file name.'
         Visible = False
       end
       object ConfirmOverwriteLabel: TLabel
         Left = 192
         Top = 136
-        Width = 197
+        Width = 214
         Height = 12
-        Caption = ' '#12399#26082#12395#23384#22312#12375#12414#12377#12290' '#19978#26360#12365#12375#12414#12377#12363#65311
+        Caption = 'Already exists. Do you want to overwrite?'
         Visible = False
       end
       object ProtectWarnLabel: TLabel
@@ -332,10 +332,10 @@ object RelSettingsForm: TRelSettingsForm
       object Label6: TLabel
         Left = 8
         Top = 273
-        Width = 87
+        Width = 76
         Height = 12
         Anchors = [akLeft, akBottom]
-        Caption = #20837#21147#12487#12451#12524#12463#12488#12522' :'
+        Caption = 'Input directory:'
       end
       object OutputFileGroup: TGroupBox
         Left = 8
@@ -343,7 +343,7 @@ object RelSettingsForm: TRelSettingsForm
         Width = 580
         Height = 57
         Anchors = [akLeft, akTop, akRight]
-        Caption = #20986#21147#12501#12449#12452#12523'(&F)'
+        Caption = 'Output &file:'
         TabOrder = 0
         DesignSize = (
           580
@@ -362,7 +362,7 @@ object RelSettingsForm: TRelSettingsForm
           Width = 57
           Height = 20
           Anchors = [akTop, akRight]
-          Caption = #21442#29031' ...'
+          Caption = 'Browse...'
           TabOrder = 1
           OnClick = SetFileNameButtonClick
         end
@@ -373,14 +373,16 @@ object RelSettingsForm: TRelSettingsForm
         Width = 580
         Height = 57
         Anchors = [akLeft, akTop, akRight]
-        Caption = #20986#21147#24418#24335'(&T)'
+        Caption = 'Output &type:'
         TabOrder = 1
         object MissingKrKrEXELabel: TLabel
           Left = 64
           Top = 40
-          Width = 383
+          Width = 413
           Height = 12
-          Caption = 'krkr.eXe '#12364#35211#12388#12363#12425#12394#12356#12383#12417#12289'EXE '#24418#24335#23455#34892#21487#33021#12501#12449#12452#12523#12434#20986#21147#12391#12365#12414#12379#12435
+          Caption = 
+            'Can not output executable file in .EXE format because krkr.eXe c' +
+            'an not be found'
           Visible = False
         end
         object XP3ArchiveRadio: TRadioButton
@@ -388,7 +390,7 @@ object RelSettingsForm: TRelSettingsForm
           Top = 24
           Width = 169
           Height = 17
-          Caption = '.XP3 '#24418#24335' '#12450#12540#12459#12452#12502'(&A)'
+          Caption = '.XP3 &archive'
           Checked = True
           TabOrder = 0
           TabStop = True
@@ -399,7 +401,7 @@ object RelSettingsForm: TRelSettingsForm
           Top = 24
           Width = 193
           Height = 17
-          Caption = '.EXE '#24418#24335' '#23455#34892#21487#33021#12501#12449#12452#12523'(&E)'
+          Caption = '.EXE &executable'
           TabOrder = 1
           OnClick = ExecutableRadioClick
         end
@@ -418,7 +420,7 @@ object RelSettingsForm: TRelSettingsForm
       end
     end
     object FileTypeSheet: TTabSheet
-      Caption = #12501#12449#12452#12523
+      Caption = 'File types'
       ImageIndex = 1
       DesignSize = (
         596
@@ -426,64 +428,49 @@ object RelSettingsForm: TRelSettingsForm
       object Label1: TLabel
         Left = 8
         Top = 24
-        Width = 80
+        Width = 94
         Height = 12
-        Caption = #22311#32302#12377#12427#29289'(&C) :'
+        Caption = 'Files to &compress:'
         FocusControl = CompressExtList
       end
       object Label2: TLabel
         Left = 152
         Top = 24
-        Width = 98
+        Width = 75
         Height = 12
-        Caption = #22311#32302#12434#12375#12394#12356#29289'(&T) :'
+        Caption = 'uncompressed:'
         FocusControl = StoreExtList
       end
       object Label3: TLabel
         Left = 152
         Top = 8
-        Width = 123
+        Width = 69
         Height = 12
-        Caption = #12450#12540#12459#12452#12502#12395#12399#21547#12417#12427#12364
-      end
-      object Label4: TLabel
-        Left = 296
-        Top = 8
-        Width = 77
-        Height = 12
-        Caption = #12450#12540#12459#12452#12502#12395#12399
+        Caption = 'Files to s&tore'
       end
       object Label5: TLabel
         Left = 296
         Top = 24
-        Width = 79
+        Width = 84
         Height = 12
-        Caption = #21547#12417#12394#12356#29289'(&E) :'
+        Caption = 'Files to exclude:'
         FocusControl = DiscardExtList
       end
       object Label7: TLabel
         Left = 470
-        Top = 272
-        Width = 111
+        Top = 288
+        Width = 113
         Height = 12
         Anchors = [akRight, akBottom]
-        Caption = #8251#12489#12521#12483#12464#65286#12489#12525#12483#12503#12391
+        Caption = '* Items can be moved'
       end
       object Label8: TLabel
         Left = 478
-        Top = 288
-        Width = 104
-        Height = 12
-        Anchors = [akRight, akBottom]
-        Caption = #21508#38917#30446#38291#12434#31227#21205#12377#12427
-      end
-      object Label9: TLabel
-        Left = 478
         Top = 304
-        Width = 73
+        Width = 101
         Height = 12
         Anchors = [akRight, akBottom]
-        Caption = #12371#12392#12418#12391#12365#12414#12377
+        Caption = 'using drag and drop'
       end
       object CompressExtList: TListBox
         Left = 8
@@ -565,14 +552,14 @@ object RelSettingsForm: TRelSettingsForm
       end
     end
     object OptionSheet: TTabSheet
-      Caption = #12458#12503#12471#12519#12531
+      Caption = 'Options'
       ImageIndex = 2
       object CompressLimitSizeLabel: TLabel
-        Left = 312
+        Left = 264
         Top = 18
-        Width = 43
+        Width = 58
         Height = 12
-        Caption = 'KB '#20197#19978
+        Caption = 'KB or more'
         Color = clBtnFace
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWindowText
@@ -585,9 +572,9 @@ object RelSettingsForm: TRelSettingsForm
       object CompressLimitCheck: TCheckBox
         Left = 8
         Top = 16
-        Width = 217
+        Width = 169
         Height = 17
-        Caption = #22823#12365#12394#12501#12449#12452#12523#12399#22311#32302#12434#34892#12431#12394#12356'(&L) :'
+        Caption = 'Do not compress &large files:'
         Checked = True
         State = cbChecked
         TabOrder = 0
@@ -596,13 +583,13 @@ object RelSettingsForm: TRelSettingsForm
       object ProtectCheck: TCheckBox
         Left = 8
         Top = 56
-        Width = 121
+        Width = 129
         Height = 17
-        Caption = #23637#38283#12503#12525#12486#12463#12488'(&P)'
+        Caption = 'Development &protect'
         TabOrder = 1
       end
       object CompressLimitSizeEdit: TEdit
-        Left = 224
+        Left = 176
         Top = 14
         Width = 81
         Height = 20
@@ -616,7 +603,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 96
         Width = 209
         Height = 17
-        Caption = 'OggVorbis '#12467#12540#12489#12502#12483#12463#20849#26377#21270'(&C)'
+        Caption = 'Ogg Vorbis &codebook sharing'
         Checked = True
         State = cbChecked
         TabOrder = 3
@@ -626,7 +613,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 136
         Width = 169
         Height = 17
-        Caption = #12452#12531#12487#12483#12463#12473#12434#22311#32302#12377#12427'(&I)'
+        Caption = 'Compress &index'
         Checked = True
         State = cbChecked
         TabOrder = 4
@@ -636,12 +623,12 @@ object RelSettingsForm: TRelSettingsForm
         Top = 176
         Width = 265
         Height = 17
-        Caption = 'xp3enc.dll '#12434#20351#12358'(&E)'
+        Caption = 'Us&e xp3enc.dll'
         TabOrder = 5
       end
     end
     object ExeOptionsSheet: TTabSheet
-      Caption = #23455#34892#21487#33021#12501#12449#12452#12523#35373#23450
+      Caption = 'Executable file options'
       ImageIndex = 3
       DesignSize = (
         596
@@ -699,7 +686,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 76
     Height = 18
     Anchors = [akTop, akRight]
-    Caption = #20445#23384'(&S)'
+    Caption = '&Save'
     TabOrder = 4
     OnClick = SaveProfileButtonClick
   end
@@ -709,39 +696,39 @@ object RelSettingsForm: TRelSettingsForm
     Width = 76
     Height = 18
     Anchors = [akTop, akRight]
-    Caption = #35501#12415#36796#12415'(&L)'
+    Caption = '&Load'
     TabOrder = 5
     OnClick = LoadProfileButtonClick
   end
   object StaticText1: TStaticText
-    Left = 374
+    Left = 406
     Top = 9
-    Width = 72
+    Width = 39
     Height = 16
     Alignment = taRightJustify
     Anchors = [akTop, akRight]
-    Caption = #12503#12525#12501#12449#12452#12523' :'
+    Caption = 'Profile:'
     TabOrder = 6
   end
   object SaveDialog: TSaveDialog
     Filter = 
-      'XP3 '#12450#12540#12459#12452#12502' ( *.xp3 )|*.xp3|.EXE '#23455#34892#21487#33021#12501#12449#12452#12523' ( *.exe )|*.exe|'#12377#12409#12390#12398#12501#12449#12452#12523 +
-      '|*.*'
+      'XP3 Archive ( *.xp3 )|*.xp3|.EXE executable file ( *.exe )|*.exe' +
+      '|All Files|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofEnableSizing]
-    Title = #20986#21147#12501#12449#12452#12523#12398#25351#23450
+    Title = 'Browse for output file'
     Left = 492
     Top = 239
   end
   object SaveProfileDialog: TSaveDialog
     DefaultExt = 'rpf'
-    Filter = 'Releaser '#12503#12525#12501#12449#12452#12523' ( *.rpf )|*.rpf|'#12377#12409#12390#12398#12501#12449#12452#12523' ( *.* )|*.*'
+    Filter = 'Releaser Profile ( *.rpf )|*.rpf|All Files ( *.* )|*.*'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
     Left = 440
     Top = 24
   end
   object OpenProfileDialog: TOpenDialog
     DefaultExt = 'rpf'
-    Filter = 'Releaser '#12503#12525#12501#12449#12452#12523' ( *.rpf )|*.rpf|'#12377#12409#12390#12398#12501#12449#12452#12523' ( *.* )|*.*'
+    Filter = 'Releaser Profile ( *.rpf )|*.rpf|All Files ( *.* )|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
     Left = 512
     Top = 24

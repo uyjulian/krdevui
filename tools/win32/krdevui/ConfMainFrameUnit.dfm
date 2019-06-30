@@ -10,14 +10,14 @@ object ConfMainFrame: TConfMainFrame
     Width = 585
     Height = 63
     Align = alBottom
-    Caption = #12450#12452#12467#12531'(&I)'
+    Caption = '&Icon'
     TabOrder = 2
     object ChangeIconCheck: TCheckBox
       Left = 8
       Top = 32
       Width = 121
       Height = 17
-      Caption = #12450#12452#12467#12531#12434#22793#26356#12377#12427
+      Caption = 'Change icon'
       TabOrder = 0
     end
     object RefIconButton: TButton
@@ -25,7 +25,7 @@ object ConfMainFrame: TConfMainFrame
       Top = 29
       Width = 75
       Height = 20
-      Caption = #21442#29031' ...'
+      Caption = 'Reference...'
       TabOrder = 1
       OnClick = RefIconButtonClick
     end
@@ -54,7 +54,7 @@ object ConfMainFrame: TConfMainFrame
     Width = 585
     Height = 206
     Align = alClient
-    Caption = #12458#12503#12471#12519#12531'(&O)'
+    Caption = '&Option'
     Enabled = False
     TabOrder = 0
     DesignSize = (
@@ -63,42 +63,42 @@ object ConfMainFrame: TConfMainFrame
     object Label1: TLabel
       Left = 8
       Top = 16
-      Width = 109
+      Width = 77
       Height = 12
-      Caption = #12458#12503#12471#12519#12531#12398#21517#21069'(&N) :'
+      Caption = 'Optional &Name:'
       FocusControl = OptionsTreeView
     end
     object Label2: TLabel
       Left = 363
       Top = 16
-      Width = 97
+      Width = 80
       Height = 12
       Anchors = [akTop, akRight]
-      Caption = #12458#12503#12471#12519#12531#12398#20516'(&V) :'
+      Caption = '&Value of option:'
     end
     object OptionsReadFailedLabel: TLabel
       Left = 120
       Top = 16
-      Width = 210
+      Width = 167
       Height = 12
-      Caption = #12458#12503#12471#12519#12531#24773#22577#12398#35501#12415#36796#12415#12395#22833#25943#12375#12414#12375#12383
+      Caption = 'Failed to read option information'
       Visible = False
     end
     object ReadingOptionsLabel: TLabel
       Left = 232
       Top = 16
-      Width = 155
+      Width = 145
       Height = 12
-      Caption = #12458#12503#12471#12519#12531#24773#22577#12434#35501#12415#36796#12415#20013' ...'
+      Caption = 'Loading option information ...'
       Visible = False
     end
     object Label3: TLabel
       Left = 360
       Top = 88
-      Width = 93
+      Width = 97
       Height = 12
       Anchors = [akTop, akRight]
-      Caption = #12458#12503#12471#12519#12531#12398#35500#26126' :'
+      Caption = 'Option Description:'
     end
     object OptionsTreeView: TTreeView
       Left = 8
@@ -144,7 +144,7 @@ object ConfMainFrame: TConfMainFrame
       Width = 118
       Height = 20
       Anchors = [akTop, akRight]
-      Caption = #12487#12501#12457#12523#12488#12395#25147#12377'(&D)'
+      Caption = 'Restore &Default'
       Enabled = False
       TabOrder = 3
       OnClick = RestoreDefaultButtonClick
@@ -155,7 +155,7 @@ object ConfMainFrame: TConfMainFrame
       Width = 65
       Height = 17
       Anchors = [akTop, akRight]
-      Caption = #38750#34920#31034
+      Caption = 'Hidden'
       Enabled = False
       TabOrder = 4
       OnClick = InvisibleCheckBoxClick
@@ -177,14 +177,14 @@ object ConfMainFrame: TConfMainFrame
     Width = 585
     Height = 41
     Align = alBottom
-    Caption = #12522#12522#12540#12473#12458#12503#12471#12519#12531'(&R)'
+    Caption = '&Release Option'
     TabOrder = 1
     object DisableMessageMapCheckBox: TCheckBox
       Left = 8
       Top = 16
       Width = 345
       Height = 17
-      Caption = #12513#12483#12475#12540#12472#12510#12483#12503#12501#12449#12452#12523'(msgmap.tjs)'#12434#35501#12415#36796#12414#12394#12356'(&M)'
+      Caption = 'Do not read &message map file (msgmap.tjs)'
       TabOrder = 0
     end
     object ForceDataXP3CheckBox: TCheckBox
@@ -192,7 +192,7 @@ object ConfMainFrame: TConfMainFrame
       Top = 16
       Width = 201
       Height = 17
-      Caption = 'XP3'#12450#12540#12459#12452#12502#12398#12415#12363#12425#23455#34892'(&3)'
+      Caption = 'Run from XP&3 archive only'
       TabOrder = 1
     end
   end
@@ -215,9 +215,9 @@ object ConfMainFrame: TConfMainFrame
     TabOrder = 4
   end
   object OpenPictureDialog: TOpenPictureDialog
-    Filter = #12450#12452#12467#12531' (*.ico)|*.ico'
+    Filter = 'Icon (*.ico)|*.ico'
     Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
-    Title = #12450#12452#12467#12531#12398#25351#23450
+    Title = 'Icon specification'
     Left = 88
     Top = 232
   end

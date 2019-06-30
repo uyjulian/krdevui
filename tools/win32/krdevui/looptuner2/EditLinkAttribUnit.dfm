@@ -9,16 +9,16 @@ object EditLinkAttribFrame: TEditLinkAttribFrame
   object Label1: TLabel
     Left = 152
     Top = 8
-    Width = 67
+    Width = 75
     Height = 12
-    Caption = #30058#12398#12501#12521#12464#12364
+    Caption = 'Number flag is'
   end
   object EnableConditionCheckBox: TCheckBox
     Left = 8
     Top = 6
     Width = 81
     Height = 17
-    Caption = #26465#20214#20184#12365
+    Caption = 'Condition'
     TabOrder = 0
     OnClick = EnableConditionCheckBoxClick
     OnKeyDown = ConditionComboBoxKeyDown
@@ -76,11 +76,11 @@ object EditLinkAttribFrame: TEditLinkAttribFrame
     OnChange = ConditionComboBoxChange
     OnKeyDown = ConditionComboBoxKeyDown
     Items.Strings = (
-      #12392#21516#12376#12392#12365
-      #12391#12394#12356#12392#12365
-      #12424#12426#22823#12365#12356#12392#12365
-      #20197#19978#12398#12392#12365
-      #12424#12426#23567#12373#12356#12392#12365
-      #20197#19979#12398#12392#12365)
+      'Equal'
+      'Not equal'
+      'Greater than'
+      'Greater than or equal'
+      'Lesser than'
+      'Lesser than or equal')
   end
 end

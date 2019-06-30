@@ -1,9 +1,9 @@
 object RelDirSearchForm: TRelDirSearchForm
-  Left = 76
-  Top = 459
+  Left = 355
+  Top = 359
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
-  Caption = #21513#37324#21513#37324' Releaser'
+  Caption = 'KiriKiri Releaser'
   ClientHeight = 76
   ClientWidth = 304
   Color = clBtnFace
@@ -170,9 +170,9 @@ object RelDirSearchForm: TRelDirSearchForm
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 239
+    Width = 161
     Height = 12
-    Caption = #12501#12449#12452#12523'/'#12501#12457#12523#12480#12398#24773#22577#12434#35501#12415#36796#12435#12391#12356#12414#12377' ...'
+    Caption = 'Loading file/folder information...'
   end
   object CurrentLabel: TLabel
     Left = 8
@@ -187,7 +187,7 @@ object RelDirSearchForm: TRelDirSearchForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #20013#26029'(&A)'
+    Caption = '&Abort'
     TabOrder = 0
     OnClick = AbortButtonClick
   end

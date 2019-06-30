@@ -2,7 +2,7 @@ object JPEGQualityForm: TJPEGQualityForm
   Left = 214
   Top = 359
   BorderStyle = bsDialog
-  Caption = 'JPEG '#12458#12503#12471#12519#12531
+  Caption = 'JPEG Options'
   ClientHeight = 113
   ClientWidth = 382
   Color = clBtnFace
@@ -18,38 +18,38 @@ object JPEGQualityForm: TJPEGQualityForm
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 71
+    Width = 36
     Height = 12
-    Caption = #12463#12458#12522#12486#12451'(&Q) :'
+    Caption = '&Quality'
     FocusControl = TrackBar
   end
   object Label2: TLabel
     Left = 264
     Top = 32
-    Width = 46
+    Width = 97
     Height = 12
-    Caption = #30011#36074' : '#39640
+    Caption = 'Image quality: High'
   end
   object Label3: TLabel
     Left = 264
     Top = 48
-    Width = 97
+    Width = 77
     Height = 12
-    Caption = #12501#12449#12452#12523#12469#12452#12474' : '#22823
+    Caption = 'File size: Large'
   end
   object Label4: TLabel
-    Left = 56
+    Left = 8
     Top = 32
-    Width = 46
+    Width = 94
     Height = 12
-    Caption = #30011#36074' : '#20302
+    Caption = 'Image quality: Low'
   end
   object Label5: TLabel
     Left = 8
     Top = 48
-    Width = 97
+    Width = 77
     Height = 12
-    Caption = #12501#12449#12452#12523#12469#12452#12474' : '#23567
+    Caption = 'File size: Small'
   end
   object QualityLabel: TLabel
     Left = 88
@@ -81,7 +81,7 @@ object JPEGQualityForm: TJPEGQualityForm
     Top = 80
     Width = 123
     Height = 25
-    Caption = #12487#12501#12457#12523#12488#12395#25147#12377'(&D)'
+    Caption = 'Restore &Defaults'
     TabOrder = 1
     OnClick = RestoreDefaultButtonClick
   end
@@ -101,7 +101,7 @@ object JPEGQualityForm: TJPEGQualityForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     ModalResult = 2
     TabOrder = 3
   end

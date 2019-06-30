@@ -1,13 +1,13 @@
 object RelFolderSelectorForm: TRelFolderSelectorForm
-  Left = 141
-  Top = 261
+  Left = 429
+  Top = 231
   Width = 416
   Height = 383
   HorzScrollBar.Tracking = True
   HorzScrollBar.Visible = False
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
-  Caption = #21513#37324#21513#37324' Releaser - '#12501#12457#12523#12480#36984#25246
+  Caption = 'KiriKiri Releaser - Select Folder'
   Color = clBtnFace
   Constraints.MinHeight = 209
   Constraints.MinWidth = 307
@@ -176,9 +176,9 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
   object Label1: TLabel
     Left = 8
     Top = 8
-    Width = 279
+    Width = 171
     Height = 12
-    Caption = #12450#12540#12459#12452#12502#21270#12377#12427#12503#12525#12472#12455#12463#12488#12501#12457#12523#12480#12434#36984#12435#12391#12367#12384#12373#12356' :'
+    Caption = 'Select a project folder to archive:'
   end
   object ShellTreeView: TShellTreeView
     Left = 8
@@ -216,7 +216,7 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     ModalResult = 2
     TabOrder = 4
   end

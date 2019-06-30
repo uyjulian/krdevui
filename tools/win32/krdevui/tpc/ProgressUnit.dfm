@@ -3,7 +3,7 @@ object ProgressForm: TProgressForm
   Top = 346
   ActiveControl = CancelButton
   BorderStyle = bsDialog
-  Caption = #22793#25563#20013' ...'
+  Caption = 'Converting...'
   ClientHeight = 98
   ClientWidth = 261
   Color = clBtnFace
@@ -38,7 +38,7 @@ object ProgressForm: TProgressForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = #12461#12515#12531#12475#12523
+    Caption = 'Cancel'
     TabOrder = 1
     OnClick = CancelButtonClick
   end
