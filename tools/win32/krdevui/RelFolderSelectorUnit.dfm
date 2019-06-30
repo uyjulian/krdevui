@@ -7,14 +7,14 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
   HorzScrollBar.Visible = False
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
-  Caption = '吉里吉里 Releaser - フォルダ選択'
+  Caption = #21513#37324#21513#37324' Releaser - '#12501#12457#12523#12480#36984#25246
   Color = clBtnFace
   Constraints.MinHeight = 209
   Constraints.MinWidth = 307
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     0000010004002020100000000000E80200004600000010101000000000002801
@@ -168,6 +168,9 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
   OldCreateOrder = False
   Position = poDefaultPosOnly
   OnDestroy = FormDestroy
+  DesignSize = (
+    408
+    356)
   PixelsPerInch = 96
   TextHeight = 12
   object Label1: TLabel
@@ -175,18 +178,25 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
     Top = 8
     Width = 279
     Height = 12
-    Caption = 'アーカイブ化するプロジェクトフォルダを選んでください :'
+    Caption = #12450#12540#12459#12452#12502#21270#12377#12427#12503#12525#12472#12455#12463#12488#12501#12457#12523#12480#12434#36984#12435#12391#12367#12384#12373#12356' :'
   end
   object ShellTreeView: TShellTreeView
     Left = 8
     Top = 48
     Width = 390
     Height = 271
+    ObjectTypes = [otFolders]
+    Root = 'rfDesktop'
+    ShellComboBox = ShellComboBox
+    UseShellImages = True
     Anchors = [akLeft, akTop, akRight, akBottom]
     Indent = 19
+    ParentColor = False
+    RightClickSelect = True
+    ShowRoot = False
     TabOrder = 0
+    TabStop = True
     OnChange = ShellTreeViewChange
-    ShellComboBox = ShellComboBox
   end
   object OKButton: TButton
     Left = 221
@@ -206,7 +216,7 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = 'キャンセル'
+    Caption = #12461#12515#12531#12475#12523
     ModalResult = 2
     TabOrder = 4
   end
@@ -214,8 +224,12 @@ object RelFolderSelectorForm: TRelFolderSelectorForm
     Left = 8
     Top = 24
     Width = 390
-    Height = 24
+    Height = 22
+    Root = 'rfDesktop'
+    ShellTreeView = ShellTreeView
+    UseShellImages = True
     Anchors = [akLeft, akTop, akRight]
+    DropDownCount = 8
     TabOrder = 1
   end
   object StatusBar: TStatusBar

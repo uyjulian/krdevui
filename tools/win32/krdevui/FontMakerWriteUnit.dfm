@@ -2,14 +2,14 @@ object FontMakerWriteForm: TFontMakerWriteForm
   Left = 104
   Top = 188
   BorderStyle = bsDialog
-  Caption = 'çÏê¨íÜ ...'
+  Caption = #20316#25104#20013' ...'
   ClientHeight = 64
   ClientWidth = 227
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ÇlÇr ÇoÉSÉVÉbÉN'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
@@ -32,7 +32,7 @@ object FontMakerWriteForm: TFontMakerWriteForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = 'ÉLÉÉÉìÉZÉã'
+    Caption = #12461#12515#12531#12475#12523
     Enabled = False
     TabOrder = 1
     OnClick = CancelButtonClick

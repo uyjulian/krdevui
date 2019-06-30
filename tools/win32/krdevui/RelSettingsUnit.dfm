@@ -7,14 +7,14 @@ object RelSettingsForm: TRelSettingsForm
   HorzScrollBar.Visible = False
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
-  Caption = '吉里吉里 Releaser - 設定'
+  Caption = #21513#37324#21513#37324' Releaser - '#35373#23450
   Color = clBtnFace
   Constraints.MinHeight = 440
   Constraints.MinWidth = 630
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     0000010004002020100000000000E80200004600000010101000000000002801
@@ -170,6 +170,9 @@ object RelSettingsForm: TRelSettingsForm
   OnCloseQuery = FormCloseQuery
   OnDestroy = FormDestroy
   OnShow = FormShow
+  DesignSize = (
+    622
+    413)
   PixelsPerInch = 96
   TextHeight = 12
   object NoExtNameLabel: TLabel
@@ -178,7 +181,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 64
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = '(拡張子なし)'
+    Caption = '('#25313#24373#23376#12394#12375')'
     Visible = False
   end
   object InterruptNameLabel: TLabel
@@ -187,7 +190,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 24
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = '中断'
+    Caption = #20013#26029
     Visible = False
   end
   object ExitNameLabel: TLabel
@@ -196,7 +199,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 24
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = '終了'
+    Caption = #32066#20102
     Visible = False
   end
   object ArchiveCreatedNameLabel: TLabel
@@ -205,7 +208,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 128
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = 'アーカイブを作成しました'
+    Caption = #12450#12540#12459#12452#12502#12434#20316#25104#12375#12414#12375#12383
     Visible = False
   end
   object InterruptedNameLabel: TLabel
@@ -214,7 +217,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 64
     Height = 12
     Anchors = [akRight, akBottom]
-    Caption = '中断しました'
+    Caption = #20013#26029#12375#12414#12375#12383
     Visible = False
   end
   object ProgressLabel: TLabel
@@ -231,7 +234,7 @@ object RelSettingsForm: TRelSettingsForm
     Top = 304
     Width = 212
     Height = 12
-    Caption = 'EXE 形式実行可能ファイルを作成しました'
+    Caption = 'EXE '#24418#24335#23455#34892#21487#33021#12501#12449#12452#12523#12434#20316#25104#12375#12414#12375#12383
     Visible = False
   end
   object OKButton: TButton
@@ -240,7 +243,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 75
     Height = 25
     Anchors = [akRight, akBottom]
-    Caption = '作成'
+    Caption = #20316#25104
     Default = True
     TabOrder = 0
     OnClick = OKButtonClick
@@ -252,7 +255,7 @@ object RelSettingsForm: TRelSettingsForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = 'キャンセル'
+    Caption = #12461#12515#12531#12475#12523
     TabOrder = 1
     OnClick = CancelButtonClick
   end
@@ -262,7 +265,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 137
     Height = 25
     Anchors = [akLeft, akBottom]
-    Caption = 'フォルダ選択に戻る(&B)'
+    Caption = #12501#12457#12523#12480#36984#25246#12395#25147#12427'(&B)'
     ModalResult = 4
     TabOrder = 2
   end
@@ -273,15 +276,19 @@ object RelSettingsForm: TRelSettingsForm
     Height = 361
     ActivePage = OutputSheel
     Anchors = [akLeft, akTop, akRight, akBottom]
+    TabIndex = 0
     TabOrder = 3
     object OutputSheel: TTabSheet
-      Caption = '出力'
+      Caption = #20986#21147
+      DesignSize = (
+        596
+        334)
       object SpecifyOutputNameLabel: TLabel
         Left = 8
         Top = 136
         Width = 169
         Height = 12
-        Caption = '出力ファイル名を指定してください'
+        Caption = #20986#21147#12501#12449#12452#12523#21517#12434#25351#23450#12375#12390#12367#12384#12373#12356
         Visible = False
       end
       object ConfirmOverwriteLabel: TLabel
@@ -289,7 +296,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 136
         Width = 197
         Height = 12
-        Caption = ' は既に存在します。 上書きしますか？'
+        Caption = ' '#12399#26082#12395#23384#22312#12375#12414#12377#12290' '#19978#26360#12365#12375#12414#12377#12363#65311
         Visible = False
       end
       object ProtectWarnLabel: TLabel
@@ -299,8 +306,7 @@ object RelSettingsForm: TRelSettingsForm
         Height = 12
         Caption = 
           'Warning: Extracting this archive may infringe on author'#39's right.' +
-          ' 警告 : このアーカイブを展開することにより、あなたは著作者の権利' +
-          'を侵害するおそれがあります。'
+          ' '#35686#21578' : '#12371#12398#12450#12540#12459#12452#12502#12434#23637#38283#12377#12427#12371#12392#12395#12424#12426#12289#12354#12394#12383#12399#33879#20316#32773#12398#27177#21033#12434#20405#23475#12377#12427#12362#12381#12428#12364#12354#12426#12414#12377#12290
         Visible = False
       end
       object ProtectWarnFileNameLabel1: TLabel
@@ -309,8 +315,8 @@ object RelSettingsForm: TRelSettingsForm
         Width = 656
         Height = 12
         Caption = 
-          '$$$ This is a protected archive. $$$ 著作者はこのアーカイブが正' +
-          '規の利用方法以外の方法で展開されることを望んでいません。 '
+          '$$$ This is a protected archive. $$$ '#33879#20316#32773#12399#12371#12398#12450#12540#12459#12452#12502#12364#27491#35215#12398#21033#29992#26041#27861#20197#22806#12398#26041#27861#12391#23637#38283 +
+          #12373#12428#12427#12371#12392#12434#26395#12435#12391#12356#12414#12379#12435#12290' '
         Visible = False
       end
       object ProtectWarnFileNameLabel2: TLabel
@@ -320,8 +326,7 @@ object RelSettingsForm: TRelSettingsForm
         Height = 12
         Caption = 
           '$$$ Warning! Extracting this archive may infringe on author'#39's ri' +
-          'ghts. 警告 このアーカイブを展開することにより、あなたは著作者の' +
-          '権利を侵害するおそれがあります。.txt'
+          'ghts. '#35686#21578' '#12371#12398#12450#12540#12459#12452#12502#12434#23637#38283#12377#12427#12371#12392#12395#12424#12426#12289#12354#12394#12383#12399#33879#20316#32773#12398#27177#21033#12434#20405#23475#12377#12427#12362#12381#12428#12364#12354#12426#12414#12377#12290'.txt'
         Visible = False
       end
       object Label6: TLabel
@@ -330,7 +335,7 @@ object RelSettingsForm: TRelSettingsForm
         Width = 87
         Height = 12
         Anchors = [akLeft, akBottom]
-        Caption = '入力ディレクトリ :'
+        Caption = #20837#21147#12487#12451#12524#12463#12488#12522' :'
       end
       object OutputFileGroup: TGroupBox
         Left = 8
@@ -338,8 +343,11 @@ object RelSettingsForm: TRelSettingsForm
         Width = 580
         Height = 57
         Anchors = [akLeft, akTop, akRight]
-        Caption = '出力ファイル(&F)'
+        Caption = #20986#21147#12501#12449#12452#12523'(&F)'
         TabOrder = 0
+        DesignSize = (
+          580
+          57)
         object OutputFileNameEdit: TEdit
           Left = 8
           Top = 24
@@ -354,7 +362,7 @@ object RelSettingsForm: TRelSettingsForm
           Width = 57
           Height = 20
           Anchors = [akTop, akRight]
-          Caption = '参照 ...'
+          Caption = #21442#29031' ...'
           TabOrder = 1
           OnClick = SetFileNameButtonClick
         end
@@ -365,16 +373,14 @@ object RelSettingsForm: TRelSettingsForm
         Width = 580
         Height = 57
         Anchors = [akLeft, akTop, akRight]
-        Caption = '出力形式(&T)'
+        Caption = #20986#21147#24418#24335'(&T)'
         TabOrder = 1
         object MissingKrKrEXELabel: TLabel
           Left = 64
           Top = 40
           Width = 383
           Height = 12
-          Caption = 
-            'krkr.eXe が見つからないため、EXE 形式実行可能ファイルを出力でき' +
-            'ません'
+          Caption = 'krkr.eXe '#12364#35211#12388#12363#12425#12394#12356#12383#12417#12289'EXE '#24418#24335#23455#34892#21487#33021#12501#12449#12452#12523#12434#20986#21147#12391#12365#12414#12379#12435
           Visible = False
         end
         object XP3ArchiveRadio: TRadioButton
@@ -382,7 +388,7 @@ object RelSettingsForm: TRelSettingsForm
           Top = 24
           Width = 169
           Height = 17
-          Caption = '.XP3 形式 アーカイブ(&A)'
+          Caption = '.XP3 '#24418#24335' '#12450#12540#12459#12452#12502'(&A)'
           Checked = True
           TabOrder = 0
           TabStop = True
@@ -393,7 +399,7 @@ object RelSettingsForm: TRelSettingsForm
           Top = 24
           Width = 193
           Height = 17
-          Caption = '.EXE 形式 実行可能ファイル(&E)'
+          Caption = '.EXE '#24418#24335' '#23455#34892#21487#33021#12501#12449#12452#12523'(&E)'
           TabOrder = 1
           OnClick = ExecutableRadioClick
         end
@@ -412,14 +418,17 @@ object RelSettingsForm: TRelSettingsForm
       end
     end
     object FileTypeSheet: TTabSheet
-      Caption = 'ファイル'
+      Caption = #12501#12449#12452#12523
       ImageIndex = 1
+      DesignSize = (
+        596
+        334)
       object Label1: TLabel
         Left = 8
         Top = 24
         Width = 80
         Height = 12
-        Caption = '圧縮する物(&C) :'
+        Caption = #22311#32302#12377#12427#29289'(&C) :'
         FocusControl = CompressExtList
       end
       object Label2: TLabel
@@ -427,7 +436,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 24
         Width = 98
         Height = 12
-        Caption = '圧縮をしない物(&T) :'
+        Caption = #22311#32302#12434#12375#12394#12356#29289'(&T) :'
         FocusControl = StoreExtList
       end
       object Label3: TLabel
@@ -435,21 +444,21 @@ object RelSettingsForm: TRelSettingsForm
         Top = 8
         Width = 123
         Height = 12
-        Caption = 'アーカイブには含めるが'
+        Caption = #12450#12540#12459#12452#12502#12395#12399#21547#12417#12427#12364
       end
       object Label4: TLabel
         Left = 296
         Top = 8
         Width = 77
         Height = 12
-        Caption = 'アーカイブには'
+        Caption = #12450#12540#12459#12452#12502#12395#12399
       end
       object Label5: TLabel
         Left = 296
         Top = 24
         Width = 79
         Height = 12
-        Caption = '含めない物(&E) :'
+        Caption = #21547#12417#12394#12356#29289'(&E) :'
         FocusControl = DiscardExtList
       end
       object Label7: TLabel
@@ -458,7 +467,7 @@ object RelSettingsForm: TRelSettingsForm
         Width = 111
         Height = 12
         Anchors = [akRight, akBottom]
-        Caption = '※ドラッグ＆ドロップで'
+        Caption = #8251#12489#12521#12483#12464#65286#12489#12525#12483#12503#12391
       end
       object Label8: TLabel
         Left = 478
@@ -466,7 +475,7 @@ object RelSettingsForm: TRelSettingsForm
         Width = 104
         Height = 12
         Anchors = [akRight, akBottom]
-        Caption = '各項目間を移動する'
+        Caption = #21508#38917#30446#38291#12434#31227#21205#12377#12427
       end
       object Label9: TLabel
         Left = 478
@@ -474,7 +483,7 @@ object RelSettingsForm: TRelSettingsForm
         Width = 73
         Height = 12
         Anchors = [akRight, akBottom]
-        Caption = 'こともできます'
+        Caption = #12371#12392#12418#12391#12365#12414#12377
       end
       object CompressExtList: TListBox
         Left = 8
@@ -523,7 +532,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 72
         Width = 25
         Height = 25
-        Caption = '←'
+        Caption = #8592
         TabOrder = 3
         OnClick = Button1Click
       end
@@ -532,7 +541,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 104
         Width = 25
         Height = 25
-        Caption = '→'
+        Caption = #8594
         TabOrder = 4
         OnClick = Button2Click
       end
@@ -541,7 +550,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 72
         Width = 25
         Height = 25
-        Caption = '←'
+        Caption = #8592
         TabOrder = 5
         OnClick = Button3Click
       end
@@ -550,25 +559,25 @@ object RelSettingsForm: TRelSettingsForm
         Top = 104
         Width = 25
         Height = 25
-        Caption = '→'
+        Caption = #8594
         TabOrder = 6
         OnClick = Button4Click
       end
     end
     object OptionSheet: TTabSheet
-      Caption = 'オプション'
+      Caption = #12458#12503#12471#12519#12531
       ImageIndex = 2
       object CompressLimitSizeLabel: TLabel
         Left = 312
         Top = 18
         Width = 43
         Height = 12
-        Caption = 'KB 以上'
+        Caption = 'KB '#20197#19978
         Color = clBtnFace
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
-        Font.Name = 'ＭＳ Ｐゴシック'
+        Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
         Font.Style = []
         ParentColor = False
         ParentFont = False
@@ -578,7 +587,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 16
         Width = 217
         Height = 17
-        Caption = '大きなファイルは圧縮を行わない(&L) :'
+        Caption = #22823#12365#12394#12501#12449#12452#12523#12399#22311#32302#12434#34892#12431#12394#12356'(&L) :'
         Checked = True
         State = cbChecked
         TabOrder = 0
@@ -589,7 +598,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 56
         Width = 121
         Height = 17
-        Caption = '展開プロテクト(&P)'
+        Caption = #23637#38283#12503#12525#12486#12463#12488'(&P)'
         TabOrder = 1
       end
       object CompressLimitSizeEdit: TEdit
@@ -607,7 +616,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 96
         Width = 209
         Height = 17
-        Caption = 'OggVorbis コードブック共有化(&C)'
+        Caption = 'OggVorbis '#12467#12540#12489#12502#12483#12463#20849#26377#21270'(&C)'
         Checked = True
         State = cbChecked
         TabOrder = 3
@@ -617,7 +626,7 @@ object RelSettingsForm: TRelSettingsForm
         Top = 136
         Width = 169
         Height = 17
-        Caption = 'インデックスを圧縮する(&I)'
+        Caption = #12452#12531#12487#12483#12463#12473#12434#22311#32302#12377#12427'(&I)'
         Checked = True
         State = cbChecked
         TabOrder = 4
@@ -627,19 +636,23 @@ object RelSettingsForm: TRelSettingsForm
         Top = 176
         Width = 265
         Height = 17
-        Caption = 'xp3enc.dll を使う(&E)'
+        Caption = 'xp3enc.dll '#12434#20351#12358'(&E)'
         TabOrder = 5
       end
     end
     object ExeOptionsSheet: TTabSheet
-      Caption = '実行可能ファイル設定'
+      Caption = #23455#34892#21487#33021#12501#12449#12452#12523#35373#23450
       ImageIndex = 3
+      DesignSize = (
+        596
+        334)
       inline ConfMainFrame: TConfMainFrame
         Left = 8
         Top = 8
         Width = 583
         Height = 321
         Anchors = [akLeft, akTop, akRight, akBottom]
+        TabOrder = 0
         inherited IconGroupBox: TGroupBox
           Top = 258
           Width = 583
@@ -686,7 +699,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 76
     Height = 18
     Anchors = [akTop, akRight]
-    Caption = '保存(&S)'
+    Caption = #20445#23384'(&S)'
     TabOrder = 4
     OnClick = SaveProfileButtonClick
   end
@@ -696,7 +709,7 @@ object RelSettingsForm: TRelSettingsForm
     Width = 76
     Height = 18
     Anchors = [akTop, akRight]
-    Caption = '読み込み(&L)'
+    Caption = #35501#12415#36796#12415'(&L)'
     TabOrder = 5
     OnClick = LoadProfileButtonClick
   end
@@ -707,32 +720,28 @@ object RelSettingsForm: TRelSettingsForm
     Height = 16
     Alignment = taRightJustify
     Anchors = [akTop, akRight]
-    Caption = 'プロファイル :'
+    Caption = #12503#12525#12501#12449#12452#12523' :'
     TabOrder = 6
   end
   object SaveDialog: TSaveDialog
     Filter = 
-      'XP3 アーカイブ ( *.xp3 )|*.xp3|.EXE 実行可能ファイル ( *.exe )|*' +
-      '.exe|すべてのファイル|*.*'
+      'XP3 '#12450#12540#12459#12452#12502' ( *.xp3 )|*.xp3|.EXE '#23455#34892#21487#33021#12501#12449#12452#12523' ( *.exe )|*.exe|'#12377#12409#12390#12398#12501#12449#12452#12523 +
+      '|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofEnableSizing]
-    Title = '出力ファイルの指定'
+    Title = #20986#21147#12501#12449#12452#12523#12398#25351#23450
     Left = 492
     Top = 239
   end
   object SaveProfileDialog: TSaveDialog
     DefaultExt = 'rpf'
-    Filter = 
-      'Releaser プロファイル ( *.rpf )|*.rpf|すべてのファイル ( *.* )|*' +
-      '.*'
+    Filter = 'Releaser '#12503#12525#12501#12449#12452#12523' ( *.rpf )|*.rpf|'#12377#12409#12390#12398#12501#12449#12452#12523' ( *.* )|*.*'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
     Left = 440
     Top = 24
   end
   object OpenProfileDialog: TOpenDialog
     DefaultExt = 'rpf'
-    Filter = 
-      'Releaser プロファイル ( *.rpf )|*.rpf|すべてのファイル ( *.* )|*' +
-      '.*'
+    Filter = 'Releaser '#12503#12525#12501#12449#12452#12523' ( *.rpf )|*.rpf|'#12377#12409#12390#12398#12501#12449#12452#12523' ( *.* )|*.*'
     Options = [ofHideReadOnly, ofPathMustExist, ofFileMustExist, ofEnableSizing]
     Left = 512
     Top = 24

@@ -3,14 +3,14 @@ object FontMakerForm: TFontMakerForm
   Top = 100
   BorderIcons = [biSystemMenu, biMinimize]
   BorderStyle = bsSingle
-  Caption = 'レンダリング済みフォントデータ作成'
+  Caption = #12524#12531#12480#12522#12531#12464#28168#12415#12501#12457#12531#12488#12487#12540#12479#20316#25104
   ClientHeight = 257
   ClientWidth = 395
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     0000010005003030000001002000A8250000560000002020000001002000A810
@@ -608,14 +608,14 @@ object FontMakerForm: TFontMakerForm
     Top = 8
     Width = 377
     Height = 137
-    Caption = 'フォント(&F)'
+    Caption = #12501#12457#12531#12488'(&F)'
     TabOrder = 0
     object Label1: TLabel
       Left = 8
       Top = 20
       Width = 76
       Height = 12
-      Caption = 'フォント名(&N) : '
+      Caption = #12501#12457#12531#12488#21517'(&N) : '
       FocusControl = FontSelectComboBox
     end
     object Label2: TLabel
@@ -623,14 +623,14 @@ object FontMakerForm: TFontMakerForm
       Top = 68
       Width = 108
       Height = 12
-      Caption = 'サイズ(文字高さ)(&S) :'
+      Caption = #12469#12452#12474'('#25991#23383#39640#12373')(&S) :'
     end
     object Label3: TLabel
       Left = 200
       Top = 68
       Width = 43
       Height = 12
-      Caption = 'ピクセル'
+      Caption = #12500#12463#12475#12523
     end
     object FontSelectComboBox: TComboBox
       Left = 88
@@ -669,7 +669,7 @@ object FontMakerForm: TFontMakerForm
       Top = 88
       Width = 81
       Height = 17
-      Caption = '太字(&B)'
+      Caption = #22826#23383'(&B)'
       TabOrder = 5
       OnClick = BoldCheckBoxClick
     end
@@ -678,7 +678,7 @@ object FontMakerForm: TFontMakerForm
       Top = 64
       Width = 105
       Height = 20
-      Caption = 'サンプルを表示(&V)'
+      Caption = #12469#12531#12503#12523#12434#34920#31034'(&V)'
       TabOrder = 7
       OnClick = ShowSampleButtonClick
     end
@@ -687,7 +687,7 @@ object FontMakerForm: TFontMakerForm
       Top = 104
       Width = 233
       Height = 17
-      Caption = 'フォント内のすべての文字を含める(&U)'
+      Caption = #12501#12457#12531#12488#20869#12398#12377#12409#12390#12398#25991#23383#12434#21547#12417#12427'(&U)'
       Enabled = False
       TabOrder = 6
       OnClick = IncludeAllFontCharsCheckBoxClick
@@ -697,7 +697,7 @@ object FontMakerForm: TFontMakerForm
       Top = 88
       Width = 145
       Height = 17
-      Caption = 'アンチエイリアス(&A)'
+      Caption = #12450#12531#12481#12456#12452#12522#12450#12473'(&A)'
       Checked = True
       State = cbChecked
       TabOrder = 4
@@ -708,7 +708,7 @@ object FontMakerForm: TFontMakerForm
       Top = 40
       Width = 265
       Height = 17
-      Caption = 'すべての TrueType フォントを表示(&T)'
+      Caption = #12377#12409#12390#12398' TrueType '#12501#12457#12531#12488#12434#34920#31034'(&T)'
       TabOrder = 1
       OnClick = ShowAllFontsCheckBoxClick
     end
@@ -717,7 +717,7 @@ object FontMakerForm: TFontMakerForm
       Top = 104
       Width = 121
       Height = 17
-      Caption = '外字を含める(&P)'
+      Caption = #22806#23383#12434#21547#12417#12427'(&P)'
       Checked = True
       State = cbChecked
       TabOrder = 8
@@ -729,7 +729,7 @@ object FontMakerForm: TFontMakerForm
     Top = 152
     Width = 377
     Height = 65
-    Caption = '出力ファイル(&O)'
+    Caption = #20986#21147#12501#12449#12452#12523'(&O)'
     TabOrder = 1
     object OutputEdit: TEdit
       Left = 8
@@ -743,7 +743,7 @@ object FontMakerForm: TFontMakerForm
       Top = 26
       Width = 75
       Height = 20
-      Caption = '参照(&R) ...'
+      Caption = #21442#29031'(&R) ...'
       TabOrder = 1
       OnClick = OutputRefButtonClick
     end
@@ -753,7 +753,7 @@ object FontMakerForm: TFontMakerForm
     Top = 224
     Width = 75
     Height = 25
-    Caption = '作成(&G) ...'
+    Caption = #20316#25104'(&G) ...'
     Default = True
     TabOrder = 2
     OnClick = CreateButtonClick
@@ -763,15 +763,15 @@ object FontMakerForm: TFontMakerForm
     Top = 224
     Width = 75
     Height = 25
-    Caption = '閉じる(&C)'
+    Caption = #38281#12376#12427'(&C)'
     TabOrder = 3
     OnClick = CancelButtonClick
   end
   object SaveDialog: TSaveDialog
     DefaultExt = 'tft'
-    Filter = '吉里吉里 pre-rendered font (*.tft)|*.tft'
+    Filter = #21513#37324#21513#37324' pre-rendered font (*.tft)|*.tft'
     Options = [ofOverwritePrompt, ofHideReadOnly, ofPathMustExist, ofEnableSizing]
-    Title = '出力ファイル ...'
+    Title = #20986#21147#12501#12449#12452#12523' ...'
     Left = 320
     Top = 144
   end

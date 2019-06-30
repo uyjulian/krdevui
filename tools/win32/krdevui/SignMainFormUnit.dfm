@@ -3,14 +3,14 @@ object SignMainForm: TSignMainForm
   Top = 17
   ActiveControl = PageControl
   BorderStyle = bsDialog
-  Caption = 'キー・署名ツール'
+  Caption = #12461#12540#12539#32626#21517#12484#12540#12523
   ClientHeight = 384
   ClientWidth = 369
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     000001000700101000000100200068040000760000003030000001002000A825
@@ -643,7 +643,7 @@ object SignMainForm: TSignMainForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = '閉じる(&C)'
+    Caption = #38281#12376#12427'(&C)'
     ModalResult = 1
     TabOrder = 0
     OnClick = CloseButtonClick
@@ -654,29 +654,30 @@ object SignMainForm: TSignMainForm
     Width = 353
     Height = 337
     ActivePage = KeyGenTabSheet
+    TabIndex = 0
     TabOrder = 1
     object KeyGenTabSheet: TTabSheet
-      Caption = 'キー生成'
+      Caption = #12461#12540#29983#25104
       object Label1: TLabel
         Left = 8
         Top = 8
         Width = 207
         Height = 12
-        Caption = '署名を行うためのキー(鍵)を作成します。'
+        Caption = #32626#21517#12434#34892#12358#12383#12417#12398#12461#12540'('#37749')'#12434#20316#25104#12375#12414#12377#12290
       end
       object Label2: TLabel
         Left = 8
         Top = 24
         Width = 324
         Height = 12
-        Caption = '下の「生成する」ボタンを押すと秘密鍵と公開鍵が生成されます。'
+        Caption = #19979#12398#12300#29983#25104#12377#12427#12301#12508#12479#12531#12434#25276#12377#12392#31192#23494#37749#12392#20844#38283#37749#12364#29983#25104#12373#12428#12414#12377#12290
       end
       object Label3: TLabel
         Left = 8
         Top = 40
         Width = 289
         Height = 12
-        Caption = 'これらはペアの鍵です。両方とも大切に保管してください。'
+        Caption = #12371#12428#12425#12399#12506#12450#12398#37749#12391#12377#12290#20001#26041#12392#12418#22823#20999#12395#20445#31649#12375#12390#12367#12384#12373#12356#12290
       end
       object Label4: TLabel
         Left = 12
@@ -685,12 +686,12 @@ object SignMainForm: TSignMainForm
         Height = 17
         Alignment = taCenter
         AutoSize = False
-        Caption = '秘密鍵の方は公開してはいけません'
+        Caption = #31192#23494#37749#12398#26041#12399#20844#38283#12375#12390#12399#12356#12369#12414#12379#12435
         Color = clRed
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWhite
         Font.Height = -12
-        Font.Name = 'ＭＳ Ｐゴシック'
+        Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
         Font.Style = [fsBold]
         ParentColor = False
         ParentFont = False
@@ -701,46 +702,46 @@ object SignMainForm: TSignMainForm
         Top = 56
         Width = 179
         Height = 12
-        Caption = '公開鍵は必要に応じて公開します。'
+        Caption = #20844#38283#37749#12399#24517#35201#12395#24540#12376#12390#20844#38283#12375#12414#12377#12290
       end
       object Label6: TLabel
         Left = 8
         Top = 173
         Width = 98
         Height = 12
-        Caption = '生成された公開鍵 :'
+        Caption = #29983#25104#12373#12428#12383#20844#38283#37749' :'
       end
       object Label7: TLabel
         Left = 8
         Top = 244
         Width = 98
         Height = 12
-        Caption = '生成された秘密鍵 :'
+        Caption = #29983#25104#12373#12428#12383#31192#23494#37749' :'
       end
       object Label8: TLabel
         Left = 166
         Top = 128
         Width = 12
         Height = 12
-        Caption = '↓'
+        Caption = #8595
       end
       object Label9: TLabel
         Left = 9
         Top = 296
         Width = 327
         Height = 12
-        Caption = '※ ウィンドウを閉じるときにクリップボードの内容はクリアされます'
+        Caption = #8251' '#12454#12451#12531#12489#12454#12434#38281#12376#12427#12392#12365#12395#12463#12522#12483#12503#12508#12540#12489#12398#20869#23481#12399#12463#12522#12450#12373#12428#12414#12377
       end
       object KeyGeneratingLabel: TLabel
         Left = 16
         Top = 128
         Width = 308
         Height = 12
-        Caption = 'キーを生成中です .. これにはしばらく時間がかかります'
+        Caption = #12461#12540#12434#29983#25104#20013#12391#12377' .. '#12371#12428#12395#12399#12375#12400#12425#12367#26178#38291#12364#12363#12363#12426#12414#12377
         Font.Charset = SHIFTJIS_CHARSET
         Font.Color = clWindowText
         Font.Height = -12
-        Font.Name = 'ＭＳ Ｐゴシック'
+        Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
         Font.Style = [fsBold]
         ParentFont = False
         Visible = False
@@ -750,7 +751,7 @@ object SignMainForm: TSignMainForm
         Top = 96
         Width = 75
         Height = 25
-        Caption = '生成する(&G)'
+        Caption = #29983#25104#12377#12427'(&G)'
         Default = True
         TabOrder = 0
         OnClick = GenerateButtonClick
@@ -760,8 +761,8 @@ object SignMainForm: TSignMainForm
         Top = 167
         Width = 75
         Height = 25
-        Hint = 'クリップボードに公開鍵をコピーします'
-        Caption = 'コピー(&B)'
+        Hint = #12463#12522#12483#12503#12508#12540#12489#12395#20844#38283#37749#12434#12467#12500#12540#12375#12414#12377
+        Caption = #12467#12500#12540'(&B)'
         Enabled = False
         ParentShowHint = False
         ShowHint = True
@@ -773,8 +774,8 @@ object SignMainForm: TSignMainForm
         Top = 238
         Width = 75
         Height = 25
-        Hint = 'クリップボードに秘密鍵をコピーします'
-        Caption = 'コピー(&P)'
+        Hint = #12463#12522#12483#12503#12508#12540#12489#12395#31192#23494#37749#12434#12467#12500#12540#12375#12414#12377
+        Caption = #12467#12500#12540'(&P)'
         Enabled = False
         ParentShowHint = False
         ShowHint = True
@@ -801,35 +802,35 @@ object SignMainForm: TSignMainForm
       end
     end
     object SignTabSheet: TTabSheet
-      Caption = '署名'
+      Caption = #32626#21517
       ImageIndex = 1
       object Label10: TLabel
         Left = 8
         Top = 8
         Width = 210
         Height = 12
-        Caption = '署名をします。秘密鍵を指定してください。'
+        Caption = #32626#21517#12434#12375#12414#12377#12290#31192#23494#37749#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
       end
       object Label11: TLabel
         Left = 16
         Top = 61
         Width = 57
         Height = 12
-        Caption = '秘密鍵(&P) :'
+        Caption = #31192#23494#37749'(&P) :'
       end
       object Label12: TLabel
         Left = 8
         Top = 120
         Width = 249
         Height = 12
-        Caption = '署名を行う対象となるファイルを指定してください。'
+        Caption = #32626#21517#12434#34892#12358#23550#35937#12392#12394#12427#12501#12449#12452#12523#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
       end
       object Label13: TLabel
         Left = 8
         Top = 288
         Width = 274
         Height = 12
-        Caption = '現バージョンでは吉里吉里本体にのみ署名可能です。'
+        Caption = #29694#12496#12540#12472#12519#12531#12391#12399#21513#37324#21513#37324#26412#20307#12395#12398#12415#32626#21517#21487#33021#12391#12377#12290
         Visible = False
       end
       object Label14: TLabel
@@ -837,7 +838,7 @@ object SignMainForm: TSignMainForm
         Top = 148
         Width = 86
         Height = 12
-        Caption = '対象ファイル(&T) :'
+        Caption = #23550#35937#12501#12449#12452#12523'(&T) :'
         FocusControl = SignFileNameEdit
       end
       object Label15: TLabel
@@ -845,21 +846,21 @@ object SignMainForm: TSignMainForm
         Top = 200
         Width = 232
         Height = 12
-        Caption = 'ファイルをこのウィンドウにドロップすることでも'
+        Caption = #12501#12449#12452#12523#12434#12371#12398#12454#12451#12531#12489#12454#12395#12489#12525#12483#12503#12377#12427#12371#12392#12391#12418
       end
       object Label16: TLabel
         Left = 8
         Top = 216
         Width = 207
         Height = 12
-        Caption = '対象ファイルを指定することが出来ます。'
+        Caption = #23550#35937#12501#12449#12452#12523#12434#25351#23450#12377#12427#12371#12392#12364#20986#26469#12414#12377#12290
       end
       object SignDoneLabel: TLabel
         Left = 16
         Top = 264
         Width = 96
         Height = 12
-        Caption = '署名を行いました。'
+        Caption = #32626#21517#12434#34892#12356#12414#12375#12383#12290
         Visible = False
       end
       object SignFileNameEdit: TEdit
@@ -875,7 +876,7 @@ object SignMainForm: TSignMainForm
         Top = 174
         Width = 67
         Height = 25
-        Caption = '参照(&R) ...'
+        Caption = #21442#29031'(&R) ...'
         TabOrder = 1
         OnClick = SignFileNameRefButtonClick
       end
@@ -884,7 +885,7 @@ object SignMainForm: TSignMainForm
         Top = 256
         Width = 82
         Height = 25
-        Caption = '署名する(&S)'
+        Caption = #32626#21517#12377#12427'(&S)'
         Default = True
         Enabled = False
         TabOrder = 2
@@ -900,14 +901,14 @@ object SignMainForm: TSignMainForm
       end
     end
     object CheckSignTabSheet: TTabSheet
-      Caption = '署名確認'
+      Caption = #32626#21517#30906#35469
       ImageIndex = 2
       object SignatureIsValidLabel: TLabel
         Left = 0
         Top = 264
         Width = 124
         Height = 12
-        Caption = '署名は正当なものです。'
+        Caption = #32626#21517#12399#27491#24403#12394#12418#12398#12391#12377#12290
         Visible = False
       end
       object Label18: TLabel
@@ -915,21 +916,21 @@ object SignMainForm: TSignMainForm
         Top = 216
         Width = 207
         Height = 12
-        Caption = '対象ファイルを指定することが出来ます。'
+        Caption = #23550#35937#12501#12449#12452#12523#12434#25351#23450#12377#12427#12371#12392#12364#20986#26469#12414#12377#12290
       end
       object Label19: TLabel
         Left = 8
         Top = 200
         Width = 232
         Height = 12
-        Caption = 'ファイルをこのウィンドウにドロップすることでも'
+        Caption = #12501#12449#12452#12523#12434#12371#12398#12454#12451#12531#12489#12454#12395#12489#12525#12483#12503#12377#12427#12371#12392#12391#12418
       end
       object Label20: TLabel
         Left = 16
         Top = 148
         Width = 86
         Height = 12
-        Caption = '対象ファイル(&T) :'
+        Caption = #23550#35937#12501#12449#12452#12523'(&T) :'
         FocusControl = CheckSignFileNameEdit
       end
       object Label21: TLabel
@@ -937,7 +938,7 @@ object SignMainForm: TSignMainForm
         Top = 280
         Width = 274
         Height = 12
-        Caption = '現バージョンでは吉里吉里本体にのみ署名可能です。'
+        Caption = #29694#12496#12540#12472#12519#12531#12391#12399#21513#37324#21513#37324#26412#20307#12395#12398#12415#32626#21517#21487#33021#12391#12377#12290
         Visible = False
       end
       object Label22: TLabel
@@ -945,28 +946,28 @@ object SignMainForm: TSignMainForm
         Top = 120
         Width = 290
         Height = 12
-        Caption = '署名をチェックする対象となるファイルを指定してください。'
+        Caption = #32626#21517#12434#12481#12455#12483#12463#12377#12427#23550#35937#12392#12394#12427#12501#12449#12452#12523#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
       end
       object Label23: TLabel
         Left = 16
         Top = 61
         Width = 57
         Height = 12
-        Caption = '公開鍵(&P) :'
+        Caption = #20844#38283#37749'(&P) :'
       end
       object Label24: TLabel
         Left = 8
         Top = 8
         Width = 234
         Height = 12
-        Caption = '署名を確認します。公開鍵を指定してください。'
+        Caption = #32626#21517#12434#30906#35469#12375#12414#12377#12290#20844#38283#37749#12434#25351#23450#12375#12390#12367#12384#12373#12356#12290
       end
       object SignatureIsInvalidLabel: TLabel
         Left = 16
         Top = 296
         Width = 169
         Height = 12
-        Caption = '署名は正当な物ではありません。'
+        Caption = #32626#21517#12399#27491#24403#12394#29289#12391#12399#12354#12426#12414#12379#12435#12290
         Visible = False
       end
       object CheckSignatureButton: TButton
@@ -974,7 +975,7 @@ object SignMainForm: TSignMainForm
         Top = 256
         Width = 82
         Height = 25
-        Caption = 'チェック(&S)'
+        Caption = #12481#12455#12483#12463'(&S)'
         Default = True
         Enabled = False
         TabOrder = 2
@@ -985,7 +986,7 @@ object SignMainForm: TSignMainForm
         Top = 174
         Width = 67
         Height = 25
-        Caption = '参照(&R) ...'
+        Caption = #21442#29031'(&R) ...'
         TabOrder = 1
         OnClick = CheckSignFileNameRefButtonClick
       end

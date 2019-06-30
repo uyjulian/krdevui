@@ -2,14 +2,14 @@ object JPEGQualityForm: TJPEGQualityForm
   Left = 214
   Top = 359
   BorderStyle = bsDialog
-  Caption = 'JPEG オプション'
+  Caption = 'JPEG '#12458#12503#12471#12519#12531
   ClientHeight = 113
   ClientWidth = 382
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   OldCreateOrder = False
   Position = poMainFormCenter
@@ -20,7 +20,7 @@ object JPEGQualityForm: TJPEGQualityForm
     Top = 8
     Width = 71
     Height = 12
-    Caption = 'クオリティ(&Q) :'
+    Caption = #12463#12458#12522#12486#12451'(&Q) :'
     FocusControl = TrackBar
   end
   object Label2: TLabel
@@ -28,28 +28,28 @@ object JPEGQualityForm: TJPEGQualityForm
     Top = 32
     Width = 46
     Height = 12
-    Caption = '画質 : 高'
+    Caption = #30011#36074' : '#39640
   end
   object Label3: TLabel
     Left = 264
     Top = 48
     Width = 97
     Height = 12
-    Caption = 'ファイルサイズ : 大'
+    Caption = #12501#12449#12452#12523#12469#12452#12474' : '#22823
   end
   object Label4: TLabel
     Left = 56
     Top = 32
     Width = 46
     Height = 12
-    Caption = '画質 : 低'
+    Caption = #30011#36074' : '#20302
   end
   object Label5: TLabel
     Left = 8
     Top = 48
     Width = 97
     Height = 12
-    Caption = 'ファイルサイズ : 小'
+    Caption = #12501#12449#12452#12523#12469#12452#12474' : '#23567
   end
   object QualityLabel: TLabel
     Left = 88
@@ -81,7 +81,7 @@ object JPEGQualityForm: TJPEGQualityForm
     Top = 80
     Width = 123
     Height = 25
-    Caption = 'デフォルトに戻す(&D)'
+    Caption = #12487#12501#12457#12523#12488#12395#25147#12377'(&D)'
     TabOrder = 1
     OnClick = RestoreDefaultButtonClick
   end
@@ -101,7 +101,7 @@ object JPEGQualityForm: TJPEGQualityForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = 'キャンセル'
+    Caption = #12461#12515#12531#12475#12523
     ModalResult = 2
     TabOrder = 3
   end

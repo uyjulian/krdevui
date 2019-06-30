@@ -4,14 +4,14 @@ object LinkDetailForm: TLinkDetailForm
   Width = 637
   Height = 350
   ActiveControl = WaveAreaPanel
-  Caption = 'リンクの編集'
+  Caption = #12522#12531#12463#12398#32232#38598
   Color = clBtnFace
   Constraints.MinHeight = 189
   Constraints.MinWidth = 612
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   OldCreateOrder = False
   OnClose = FormClose
@@ -21,13 +21,18 @@ object LinkDetailForm: TLinkDetailForm
   PixelsPerInch = 96
   TextHeight = 12
   inline EditLinkAttribFrame: TEditLinkAttribFrame
+    Left = 0
+    Top = 0
     Width = 629
+    Height = 30
+    HorzScrollBar.Visible = False
+    VertScrollBar.Visible = False
     Align = alTop
     TabOrder = 3
   end
   object ToolBarPanel: TPanel
     Left = 0
-    Top = 252
+    Top = 259
     Width = 629
     Height = 31
     Align = alBottom
@@ -141,20 +146,23 @@ object LinkDetailForm: TLinkDetailForm
   end
   object BottomPanel: TPanel
     Left = 0
-    Top = 283
+    Top = 290
     Width = 629
     Height = 33
     Align = alBottom
     BevelOuter = bvNone
     BorderWidth = 4
     TabOrder = 1
+    DesignSize = (
+      629
+      33)
     object PlayBeforeLabel: TLabel
       Left = 304
       Top = 5
       Width = 109
       Height = 12
-      Hint = 'リンクまであと %.1f 秒'
-      Caption = 'リンクまであと %.1f 秒'
+      Hint = #12522#12531#12463#12414#12391#12354#12392' %.1f '#31186
+      Caption = #12522#12531#12463#12414#12391#12354#12392' %.1f '#31186
       Visible = False
     end
     object BottomToolBar: TToolBar
@@ -279,7 +287,7 @@ object LinkDetailForm: TLinkDetailForm
       Height = 25
       Anchors = [akTop, akRight]
       Cancel = True
-      Caption = 'キャンセル'
+      Caption = #12461#12515#12531#12475#12523
       TabOrder = 3
       OnClick = CancelButtonClick
     end
@@ -304,18 +312,21 @@ object LinkDetailForm: TLinkDetailForm
     Left = 0
     Top = 30
     Width = 629
-    Height = 222
+    Height = 229
     Align = alClient
     BevelOuter = bvLowered
     PopupMenu = WaveAreaPopupMenu
     TabOrder = 2
     OnEnter = WaveAreaPanelEnter
     OnExit = WaveAreaPanelExit
+    DesignSize = (
+      629
+      229)
     object WavePaintBox: TPaintBox
       Left = 1
       Top = 1
       Width = 627
-      Height = 220
+      Height = 227
       Align = alClient
       OnDblClick = WavePaintBoxDblClick
       OnMouseDown = WavePaintBoxMouseDown
@@ -329,11 +340,11 @@ object LinkDetailForm: TLinkDetailForm
       Width = 45
       Height = 12
       Anchors = [akTop, akRight]
-      Caption = 'リンク後'
+      Caption = #12522#12531#12463#24460
       Font.Charset = SHIFTJIS_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
-      Font.Name = 'ＭＳ Ｐゴシック'
+      Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
       Font.Style = [fsBold]
       ParentFont = False
       Transparent = True
@@ -343,11 +354,11 @@ object LinkDetailForm: TLinkDetailForm
       Top = 8
       Width = 45
       Height = 12
-      Caption = 'リンク前'
+      Caption = #12522#12531#12463#21069
       Font.Charset = SHIFTJIS_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
-      Font.Name = 'ＭＳ Ｐゴシック'
+      Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
       Font.Style = [fsBold]
       ParentFont = False
       Transparent = True
@@ -358,175 +369,175 @@ object LinkDetailForm: TLinkDetailForm
     Left = 456
     Top = 24
     object StopPlayAction: TAction
-      Category = '再生'
-      Caption = '再生停止(&Q)'
-      Hint = '再生を停止'
+      Category = #20877#29983
+      Caption = #20877#29983#20572#27490'(&Q)'
+      Hint = #20877#29983#12434#20572#27490
       ImageIndex = 4
       ShortCut = 81
       OnExecute = StopPlayActionExecute
     end
     object ZoomInAction: TAction
-      Category = '表示'
-      Caption = 'ズーム・イン(&I)'
-      Hint = '波形を拡大する'
+      Category = #34920#31034
+      Caption = #12474#12540#12512#12539#12452#12531'(&I)'
+      Hint = #27874#24418#12434#25313#22823#12377#12427
       ImageIndex = 9
       ShortCut = 73
       OnExecute = ZoomInActionExecute
     end
     object ZoomOutAction: TAction
-      Category = '表示'
-      Caption = 'ズーム・アウト(&O)'
-      Hint = '波形を縮小する'
+      Category = #34920#31034
+      Caption = #12474#12540#12512#12539#12450#12454#12488'(&O)'
+      Hint = #27874#24418#12434#32302#23567#12377#12427
       ImageIndex = 10
       ShortCut = 79
       OnExecute = ZoomOutActionExecute
     end
     object PlayHalfSecAction: TAction
-      Category = '再生'
-      Caption = '0.5秒前から再生(&0)'
-      Hint = '0.5秒前から再生'
+      Category = #20877#29983
+      Caption = '0.5'#31186#21069#12363#12425#20877#29983'(&0)'
+      Hint = '0.5'#31186#21069#12363#12425#20877#29983
       ImageIndex = 25
       ShortCut = 16432
       OnExecute = PlayHalfSecActionExecute
     end
     object Play1SecAction: TAction
-      Category = '再生'
-      Caption = '1秒前から再生(&1)'
-      Hint = '1秒前から再生'
+      Category = #20877#29983
+      Caption = '1'#31186#21069#12363#12425#20877#29983'(&1)'
+      Hint = '1'#31186#21069#12363#12425#20877#29983
       ImageIndex = 26
       ShortCut = 16433
       OnExecute = Play1SecActionExecute
     end
     object Play2SecAction: TAction
-      Category = '再生'
-      Caption = '2秒前から再生(&2)'
-      Hint = '2秒前から再生'
+      Category = #20877#29983
+      Caption = '2'#31186#21069#12363#12425#20877#29983'(&2)'
+      Hint = '2'#31186#21069#12363#12425#20877#29983
       ImageIndex = 27
       ShortCut = 16434
       OnExecute = Play2SecActionExecute
     end
     object Play3SecAction: TAction
-      Category = '再生'
-      Caption = '3秒前から再生(&3)'
-      Hint = '3秒前から再生'
+      Category = #20877#29983
+      Caption = '3'#31186#21069#12363#12425#20877#29983'(&3)'
+      Hint = '3'#31186#21069#12363#12425#20877#29983
       ImageIndex = 28
       ShortCut = 16435
       OnExecute = Play3SecActionExecute
     end
     object Play5SecAction: TAction
-      Category = '再生'
-      Caption = '5秒前から再生(&5)'
-      Hint = '5秒前から再生'
+      Category = #20877#29983
+      Caption = '5'#31186#21069#12363#12425#20877#29983'(&5)'
+      Hint = '5'#31186#21069#12363#12425#20877#29983
       ImageIndex = 29
       ShortCut = 16437
       OnExecute = Play5SecActionExecute
     end
     object SmoothAction: TAction
-      Category = '属性'
-      Caption = 'スムーズ(&S)'
-      Hint = 'リンクをスムーズにする'
+      Category = #23646#24615
+      Caption = #12473#12512#12540#12474'(&S)'
+      Hint = #12522#12531#12463#12434#12473#12512#12540#12474#12395#12377#12427
       ImageIndex = 30
       ShortCut = 77
       OnExecute = SmoothActionExecute
     end
     object BeforePrevCrossAction: TAction
-      Category = 'リンク前'
-      Caption = '前のクロッシング・ポイントへ(&A)'
-      Hint = '前のクロッシング・ポイントへ'
+      Category = #12522#12531#12463#21069
+      Caption = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&A)'
+      Hint = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
       ImageIndex = 22
       ShortCut = 65
       OnExecute = BeforePrevCrossActionExecute
     end
     object BeforePrevFastAction: TAction
-      Category = 'リンク前'
-      Caption = '前へ20ステップ(&S)'
-      Hint = '前へ20ステップ'
+      Category = #12522#12531#12463#21069
+      Caption = #21069#12408'20'#12473#12486#12483#12503'(&S)'
+      Hint = #21069#12408'20'#12473#12486#12483#12503
       ImageIndex = 23
       ShortCut = 83
       OnExecute = BeforePrevFastActionExecute
     end
     object BeforePrevStepAction: TAction
-      Category = 'リンク前'
-      Caption = '前へ1ステップ(&D)'
-      Hint = '前へ1ステップ'
+      Category = #12522#12531#12463#21069
+      Caption = #21069#12408'1'#12473#12486#12483#12503'(&D)'
+      Hint = #21069#12408'1'#12473#12486#12483#12503
       ImageIndex = 21
       ShortCut = 68
       OnExecute = BeforePrevStepActionExecute
     end
     object BeforeNextStepAction: TAction
-      Category = 'リンク前'
-      Caption = '次へ1ステップ(&F)'
-      Hint = '次へ1ステップ'
+      Category = #12522#12531#12463#21069
+      Caption = #27425#12408'1'#12473#12486#12483#12503'(&F)'
+      Hint = #27425#12408'1'#12473#12486#12483#12503
       ImageIndex = 18
       ShortCut = 70
       OnExecute = BeforeNextStepActionExecute
     end
     object BeforeNextFastAction: TAction
-      Category = 'リンク前'
-      Caption = '次へ20ステップ(&G)'
-      Hint = '次へ20ステップ'
+      Category = #12522#12531#12463#21069
+      Caption = #27425#12408'20'#12473#12486#12483#12503'(&G)'
+      Hint = #27425#12408'20'#12473#12486#12483#12503
       ImageIndex = 20
       ShortCut = 71
       OnExecute = BeforeNextFastActionExecute
     end
     object BeforeNextCrossAction: TAction
-      Category = 'リンク前'
-      Caption = '次のクロッシング・ポイントへ(&H)'
-      Hint = '次のクロッシング・ポイントへ'
+      Category = #12522#12531#12463#21069
+      Caption = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&H)'
+      Hint = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
       ImageIndex = 19
       ShortCut = 72
       OnExecute = BeforeNextCrossActionExecute
     end
     object AfterPrevCrossAction: TAction
-      Category = 'リンク後'
-      Caption = '前のクロッシング・ポイントへ(&Z)'
-      Hint = '前のクロッシング・ポイントへ'
+      Category = #12522#12531#12463#24460
+      Caption = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&Z)'
+      Hint = #21069#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
       ImageIndex = 22
       ShortCut = 90
       OnExecute = AfterPrevCrossActionExecute
     end
     object AfterPrevFastAction: TAction
-      Category = 'リンク後'
-      Caption = '前へ20ステップ(&X)'
-      Hint = '前へ20ステップ'
+      Category = #12522#12531#12463#24460
+      Caption = #21069#12408'20'#12473#12486#12483#12503'(&X)'
+      Hint = #21069#12408'20'#12473#12486#12483#12503
       ImageIndex = 23
       ShortCut = 88
       OnExecute = AfterPrevFastActionExecute
     end
     object AfterPrevStepAction: TAction
-      Category = 'リンク後'
-      Caption = '前へ1ステップ(&C)'
-      Hint = '前へ1ステップ'
+      Category = #12522#12531#12463#24460
+      Caption = #21069#12408'1'#12473#12486#12483#12503'(&C)'
+      Hint = #21069#12408'1'#12473#12486#12483#12503
       ImageIndex = 21
       ShortCut = 67
       OnExecute = AfterPrevStepActionExecute
     end
     object AfterNextStepAction: TAction
-      Category = 'リンク後'
-      Caption = '次へ1ステップ(&V)'
-      Hint = '次へ1ステップ'
+      Category = #12522#12531#12463#24460
+      Caption = #27425#12408'1'#12473#12486#12483#12503'(&V)'
+      Hint = #27425#12408'1'#12473#12486#12483#12503
       ImageIndex = 18
       ShortCut = 86
       OnExecute = AfterNextStepActionExecute
     end
     object AfterNextFastAction: TAction
-      Category = 'リンク後'
-      Caption = '次へ20ステップ(&B)'
-      Hint = '次へ20ステップ'
+      Category = #12522#12531#12463#24460
+      Caption = #27425#12408'20'#12473#12486#12483#12503'(&B)'
+      Hint = #27425#12408'20'#12473#12486#12483#12503
       ImageIndex = 20
       ShortCut = 66
       OnExecute = AfterNextFastActionExecute
     end
     object AfterNextCrossAction: TAction
-      Category = 'リンク後'
-      Caption = '次のクロッシング・ポイントへ(&N)'
-      Hint = '次のクロッシング・ポイントへ'
+      Category = #12522#12531#12463#24460
+      Caption = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408'(&N)'
+      Hint = #27425#12398#12463#12525#12483#12471#12531#12464#12539#12509#12452#12531#12488#12408
       ImageIndex = 19
       ShortCut = 78
       OnExecute = AfterNextCrossActionExecute
     end
     object PlayAction: TAction
-      Category = '再生'
+      Category = #20877#29983
       Caption = 'PlayAction'
       ImageIndex = 24
       ShortCut = 32
@@ -552,7 +563,7 @@ object LinkDetailForm: TLinkDetailForm
       Caption = '-'
     end
     object PlayMenuItem: TMenuItem
-      Caption = '再生'
+      Caption = #20877#29983
       Default = True
       ImageIndex = 24
       ShortCut = 32

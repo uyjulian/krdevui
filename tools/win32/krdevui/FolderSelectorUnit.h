@@ -37,11 +37,7 @@ __published:	// IDE 管理のコンポーネント
 	TLabel *NothingLabel;
 	TPageScroller *PageScroller;
 	TStaticText *PlaceLabel;
-	TMenuItem *SelectItemMenuItem;
-	TMenuItem *N2;
 	TStatusBar *StatusBar1;
-	TMenuItem *SelectFolderMenuItem;
-	TMenuItem *N3;
 	void __fastcall FormResize(TObject *Sender);
 	void __fastcall FormDestroy(TObject *Sender);
 	void __fastcall ShellTreeViewChange(TObject *Sender, TTreeNode *Node);

@@ -1,6 +1,6 @@
 object FolderSelectorForm: TFolderSelectorForm
-  Left = 18
-  Top = 6
+  Left = 413
+  Top = 286
   Width = 637
   Height = 435
   HorzScrollBar.Tracking = True
@@ -8,14 +8,14 @@ object FolderSelectorForm: TFolderSelectorForm
   VertScrollBar.Tracking = True
   VertScrollBar.Visible = False
   ActiveControl = ShellTreeView
-  Caption = 'フォルダ/アーカイブの選択'
+  Caption = #12501#12457#12523#12480'/'#12450#12540#12459#12452#12502#12398#36984#25246
   Color = clBtnFace
   Constraints.MinHeight = 225
   Constraints.MinWidth = 300
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     000001000B00404000000100200028420000B600000040400000010008002816
@@ -1442,6 +1442,9 @@ object FolderSelectorForm: TFolderSelectorForm
   Position = poScreenCenter
   OnDestroy = FormDestroy
   OnResize = FormResize
+  DesignSize = (
+    629
+    408)
   PixelsPerInch = 96
   TextHeight = 12
   object Label1: TLabel
@@ -1449,7 +1452,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Top = 8
     Width = 216
     Height = 12
-    Caption = 'フォルダ/アーカイブを選択してください(&F) :'
+    Caption = #12501#12457#12523#12480'/'#12450#12540#12459#12452#12502#12434#36984#25246#12375#12390#12367#12384#12373#12356'(&F) :'
     FocusControl = ShellTreeView
   end
   object Label2: TLabel
@@ -1458,14 +1461,14 @@ object FolderSelectorForm: TFolderSelectorForm
     Width = 42
     Height = 12
     Anchors = [akLeft, akBottom]
-    Caption = '選択中 :'
+    Caption = #36984#25246#20013' :'
   end
   object FileLabel: TLabel
     Left = 120
     Top = 384
     Width = 53
     Height = 12
-    Caption = ' (ファイル)'
+    Caption = ' ('#12501#12449#12452#12523')'
     Visible = False
   end
   object FolderLabel: TLabel
@@ -1473,7 +1476,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Top = 384
     Width = 55
     Height = 12
-    Caption = ' (フォルダ)'
+    Caption = ' ('#12501#12457#12523#12480')'
     Visible = False
   end
   object NothingLabel: TLabel
@@ -1481,7 +1484,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Top = 384
     Width = 28
     Height = 12
-    Caption = '(なし)'
+    Caption = '('#12394#12375')'
     Visible = False
   end
   object ViewPanel: TPanel
@@ -1505,30 +1508,48 @@ object FolderSelectorForm: TFolderSelectorForm
       Top = 0
       Width = 364
       Height = 329
+      ObjectTypes = [otFolders, otNonFolders]
+      Root = 'rfDesktop'
+      ShellTreeView = ShellTreeView
+      Sorted = True
       Align = alClient
-      TabOrder = 1
-      ViewStyle = vsList
-      OnChange = ShellListViewChange
       OnClick = ShellListViewClick
+      HideSelection = False
+      OnChange = ShellListViewChange
+      ParentColor = False
+      TabOrder = 1
+      TabStop = True
+      ViewStyle = vsList
     end
     object ShellTreeView: TShellTreeView
       Left = 0
       Top = 0
       Width = 244
       Height = 329
-      Align = alLeft
-      Indent = 19
-      TabOrder = 0
-      OnChange = ShellTreeViewChange
-      OnClick = ShellTreeViewClick
+      ObjectTypes = [otFolders]
+      Root = 'rfDesktop'
       ShellComboBox = ShellComboBox
       ShellListView = ShellListView
+      UseShellImages = True
+      Align = alLeft
+      Indent = 19
+      ParentColor = False
+      RightClickSelect = True
+      ShowRoot = False
+      TabOrder = 0
+      TabStop = True
+      OnClick = ShellTreeViewClick
+      OnChange = ShellTreeViewChange
     end
     object ShellComboBox: TShellComboBox
       Left = 120
       Top = 40
       Width = 145
-      Height = 24
+      Height = 22
+      Root = 'rfDesktop'
+      ShellTreeView = ShellTreeView
+      UseShellImages = True
+      DropDownCount = 8
       TabOrder = 2
     end
   end
@@ -1550,7 +1571,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Height = 25
     Anchors = [akRight, akBottom]
     Cancel = True
-    Caption = 'キャンセル'
+    Caption = #12461#12515#12531#12475#12523
     ModalResult = 2
     TabOrder = 1
   end
@@ -1560,7 +1581,7 @@ object FolderSelectorForm: TFolderSelectorForm
     Width = 81
     Height = 25
     Anchors = [akLeft, akBottom]
-    Caption = '選択しない(&N)'
+    Caption = #36984#25246#12375#12394#12356'(&N)'
     ModalResult = 3
     TabOrder = 2
   end
@@ -1576,8 +1597,8 @@ object FolderSelectorForm: TFolderSelectorForm
     object PlaceLabel: TStaticText
       Left = 0
       Top = 0
-      Width = 560
-      Height = 12
+      Width = 59
+      Height = 16
       Caption = 'PlaceLabel'
       TabOrder = 0
     end

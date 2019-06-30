@@ -3,14 +3,14 @@ object TPCMainForm: TTPCMainForm
   Top = 7
   ActiveControl = CloseButton
   BorderStyle = bsDialog
-  Caption = '画像フォーマットコンバータ'
+  Caption = #30011#20687#12501#12457#12540#12510#12483#12488#12467#12531#12496#12540#12479
   ClientHeight = 390
   ClientWidth = 546
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ＭＳ Ｐゴシック'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   OldCreateOrder = False
   Position = poDefault
@@ -23,21 +23,21 @@ object TPCMainForm: TTPCMainForm
     Top = 9
     Width = 283
     Height = 12
-    Caption = '変換したいファイルをこのウィンドウにドロップしてください'
+    Caption = #22793#25563#12375#12383#12356#12501#12449#12452#12523#12434#12371#12398#12454#12451#12531#12489#12454#12395#12489#12525#12483#12503#12375#12390#12367#12384#12373#12356
   end
   object TranspOuputFormatGroupBox: TGroupBox
     Left = 144
     Top = 32
     Width = 393
     Height = 209
-    Caption = '透明部分のある画像(&F)'
+    Caption = #36879#26126#37096#20998#12398#12354#12427#30011#20687'(&F)'
     TabOrder = 2
     object TranspMainFormatLabel: TLabel
       Left = 232
       Top = 28
       Width = 75
       Height = 12
-      Caption = 'メイン形式(&C) :'
+      Caption = #12513#12452#12531#24418#24335'(&C) :'
       FocusControl = TranspMainFormatComboBox
     end
     object TranspMaskFormatLabel: TLabel
@@ -45,7 +45,7 @@ object TPCMainForm: TTPCMainForm
       Top = 75
       Width = 79
       Height = 12
-      Caption = 'マスク形式(&M) :'
+      Caption = #12510#12473#12463#24418#24335'(&M) :'
       FocusControl = TranspMaskFormatComboBox
     end
     object TranspFullTranspColorMethodLabel: TLabel
@@ -53,7 +53,7 @@ object TPCMainForm: TTPCMainForm
       Top = 176
       Width = 146
       Height = 12
-      Caption = '完全透明部分の色情報(&U) : '
+      Caption = #23436#20840#36879#26126#37096#20998#12398#33394#24773#22577'(&U) : '
       FocusControl = TranspFullTranspColorMethodComboBox
     end
     object TranspBMPFormatRadioButton: TRadioButton
@@ -61,7 +61,7 @@ object TPCMainForm: TTPCMainForm
       Top = 24
       Width = 193
       Height = 17
-      Caption = 'αチャンネル付き 32bit B&MP'
+      Caption = #945#12481#12515#12531#12493#12523#20184#12365' 32bit B&MP'
       TabOrder = 0
       OnClick = TranspBMPFormatRadioButtonClick
     end
@@ -70,7 +70,7 @@ object TPCMainForm: TTPCMainForm
       Top = 40
       Width = 161
       Height = 17
-      Caption = 'αチャネル付き P&NG'
+      Caption = #945#12481#12515#12493#12523#20184#12365' P&NG'
       Checked = True
       TabOrder = 1
       TabStop = True
@@ -81,7 +81,7 @@ object TPCMainForm: TTPCMainForm
       Top = 88
       Width = 153
       Height = 17
-      Caption = 'メイン/マスク分離形式(&S)'
+      Caption = #12513#12452#12531'/'#12510#12473#12463#20998#38626#24418#24335'(&S)'
       TabOrder = 4
       OnClick = TranspSeparatedFormatRadioButtonClick
     end
@@ -118,7 +118,7 @@ object TPCMainForm: TTPCMainForm
       Top = 48
       Width = 73
       Height = 20
-      Caption = 'JPEG設定 ...'
+      Caption = 'JPEG'#35373#23450' ...'
       TabOrder = 6
       OnClick = TranspMainJPEGOptionButtonClick
     end
@@ -127,7 +127,7 @@ object TPCMainForm: TTPCMainForm
       Top = 95
       Width = 73
       Height = 20
-      Caption = 'JPEG設定 ...'
+      Caption = 'JPEG'#35373#23450' ...'
       TabOrder = 8
       OnClick = TranspMaskJPEGOptionButtonClick
     end
@@ -140,20 +140,20 @@ object TPCMainForm: TTPCMainForm
       ItemHeight = 12
       TabOrder = 11
       Items.Strings = (
-        '除去'
-        'そのまま'
-        '合成(1pixel)'
-        '合成(2pixel)'
-        '合成(3pixel)'
-        '合成(5pixel)'
-        '合成(8pixel)')
+        #38500#21435
+        #12381#12398#12414#12414
+        #21512#25104'(1pixel)'
+        #21512#25104'(2pixel)'
+        #21512#25104'(3pixel)'
+        #21512#25104'(5pixel)'
+        #21512#25104'(8pixel)')
     end
     object TranspTLG5FormatRadioButton: TRadioButton
       Left = 16
       Top = 56
       Width = 153
       Height = 17
-      Caption = 'αチャネル付き T&LG5'
+      Caption = #945#12481#12515#12493#12523#20184#12365' T&LG5'
       TabOrder = 2
       OnClick = TranspTLG5FormatRadioButtonClick
     end
@@ -162,7 +162,7 @@ object TPCMainForm: TTPCMainForm
       Top = 72
       Width = 145
       Height = 17
-      Caption = 'αチャネル付き TLG&6'
+      Caption = #945#12481#12515#12493#12523#20184#12365' TLG&6'
       TabOrder = 3
       OnClick = TranspTLG6FormatRadioButtonClick
     end
@@ -171,7 +171,7 @@ object TPCMainForm: TTPCMainForm
       Top = 152
       Width = 353
       Height = 17
-      Caption = 'ltAddAlpha形式で出力する(&A)'
+      Caption = 'ltAddAlpha'#24418#24335#12391#20986#21147#12377#12427'(&A)'
       TabOrder = 10
       OnClick = TranspOutputAddAlphaFormatCheckBoxClick
     end
@@ -188,7 +188,7 @@ object TPCMainForm: TTPCMainForm
       Top = 136
       Width = 353
       Height = 17
-      Caption = '入力画像をltAddAlpha形式であるとみなす(&D)'
+      Caption = #20837#21147#30011#20687#12434'ltAddAlpha'#24418#24335#12391#12354#12427#12392#12415#12394#12377'(&D)'
       TabOrder = 9
       OnClick = TranspAssumeInputIsAddAlphaCheckBoxClick
     end
@@ -198,14 +198,14 @@ object TPCMainForm: TTPCMainForm
     Top = 248
     Width = 529
     Height = 105
-    Caption = '出力フォルダ(&O)'
+    Caption = #20986#21147#12501#12457#12523#12480'(&O)'
     TabOrder = 3
     object SameFolderRadioButton: TRadioButton
       Left = 16
       Top = 24
       Width = 249
       Height = 17
-      Caption = '入力ファイルと同じフォルダ(&I)'
+      Caption = #20837#21147#12501#12449#12452#12523#12392#21516#12376#12501#12457#12523#12480'(&I)'
       Checked = True
       TabOrder = 0
       TabStop = True
@@ -216,7 +216,7 @@ object TPCMainForm: TTPCMainForm
       Top = 48
       Width = 137
       Height = 17
-      Caption = '指定フォルダ(&Y) :'
+      Caption = #25351#23450#12501#12457#12523#12480'(&Y) :'
       TabOrder = 1
       OnClick = SpecifyFolderRadioButtonClick
     end
@@ -228,7 +228,7 @@ object TPCMainForm: TTPCMainForm
       Font.Charset = SHIFTJIS_CHARSET
       Font.Color = clWindowText
       Font.Height = -12
-      Font.Name = 'ＭＳ ゴシック'
+      Font.Name = #65325#65331' '#12468#12471#12483#12463
       Font.Pitch = fpFixed
       Font.Style = []
       ParentFont = False
@@ -239,7 +239,7 @@ object TPCMainForm: TTPCMainForm
       Top = 46
       Width = 49
       Height = 20
-      Caption = '参照 ...'
+      Caption = #21442#29031' ...'
       TabOrder = 3
       OnClick = OutputFolderRefButtonClick
     end
@@ -248,7 +248,7 @@ object TPCMainForm: TTPCMainForm
       Top = 72
       Width = 313
       Height = 17
-      Caption = '同名のファイルがあった場合に上書きする(&O)'
+      Caption = #21516#21517#12398#12501#12449#12452#12523#12364#12354#12387#12383#22580#21512#12395#19978#26360#12365#12377#12427'(&O)'
       TabOrder = 4
     end
   end
@@ -258,7 +258,7 @@ object TPCMainForm: TTPCMainForm
     Width = 75
     Height = 21
     Cancel = True
-    Caption = '閉じる(&X)'
+    Caption = #38281#12376#12427'(&X)'
     TabOrder = 5
     OnClick = CloseButtonClick
   end
@@ -267,7 +267,7 @@ object TPCMainForm: TTPCMainForm
     Top = 32
     Width = 129
     Height = 209
-    Caption = '不透明な画像(&Q)'
+    Caption = #19981#36879#26126#12394#30011#20687'(&Q)'
     TabOrder = 1
     object OpaqueBMPFormatRadioButton: TRadioButton
       Left = 16
@@ -321,7 +321,7 @@ object TPCMainForm: TTPCMainForm
       Top = 109
       Width = 73
       Height = 20
-      Caption = 'JPEG設定 ...'
+      Caption = 'JPEG'#35373#23450' ...'
       TabOrder = 5
       OnClick = OpaqueJPEGOptionButtonClick
     end
@@ -331,7 +331,7 @@ object TPCMainForm: TTPCMainForm
     Top = 361
     Width = 361
     Height = 17
-    Caption = 'エラーが発生しなかった場合はログを表示しない(&K)'
+    Caption = #12456#12521#12540#12364#30330#29983#12375#12394#12363#12387#12383#22580#21512#12399#12525#12464#12434#34920#31034#12375#12394#12356'(&K)'
     TabOrder = 4
   end
   object ExpandButton: TCheckBox
@@ -339,7 +339,7 @@ object TPCMainForm: TTPCMainForm
     Top = 6
     Width = 129
     Height = 17
-    Caption = 'オプションを表示(&V)'
+    Caption = #12458#12503#12471#12519#12531#12434#34920#31034'(&V)'
     TabOrder = 0
     OnClick = ExpandButtonClick
   end

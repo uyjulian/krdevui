@@ -3,14 +3,14 @@ object RelDirSearchForm: TRelDirSearchForm
   Top = 459
   BorderIcons = [biSystemMenu]
   BorderStyle = bsDialog
-  Caption = 'ãgó¢ãgó¢ Releaser'
+  Caption = #21513#37324#21513#37324' Releaser'
   ClientHeight = 76
   ClientWidth = 304
   Color = clBtnFace
   Font.Charset = SHIFTJIS_CHARSET
   Font.Color = clWindowText
   Font.Height = -12
-  Font.Name = 'ÇlÇr ÇoÉSÉVÉbÉN'
+  Font.Name = #65325#65331' '#65328#12468#12471#12483#12463
   Font.Style = []
   Icon.Data = {
     0000010004002020100000000000E80200004600000010101000000000002801
@@ -172,7 +172,7 @@ object RelDirSearchForm: TRelDirSearchForm
     Top = 8
     Width = 239
     Height = 12
-    Caption = 'ÉtÉ@ÉCÉã/ÉtÉHÉãÉ_ÇÃèÓïÒÇì«Ç›çûÇÒÇ≈Ç¢Ç‹Ç∑ ...'
+    Caption = #12501#12449#12452#12523'/'#12501#12457#12523#12480#12398#24773#22577#12434#35501#12415#36796#12435#12391#12356#12414#12377' ...'
   end
   object CurrentLabel: TLabel
     Left = 8
@@ -187,7 +187,7 @@ object RelDirSearchForm: TRelDirSearchForm
     Width = 75
     Height = 25
     Cancel = True
-    Caption = 'íÜíf(&A)'
+    Caption = #20013#26029'(&A)'
     TabOrder = 0
     OnClick = AbortButtonClick
   end
